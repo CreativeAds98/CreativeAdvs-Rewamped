@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team — Creative Advs | Digital Marketing Agency</title>
+    <link rel="icon" type="image/png" href="/assets/logo.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="teamstyle.css">
+</head>
+
+<body>
+
+    <!-- Sidebar 
+    <div class="get-quote">Get Quote</div>-->
+
+
+  <!-- NAVBAR -->
+<nav>
+    <a href="/index.html" class="logo-wrap">
+        <img src="/assets/logo.png" alt="logo" class="logo-img" width="48" height="48">
+        <div class="logo-text-block">
+            <span class="l1">Creative Advs</span>
+            <span class="l2">Digital Marketing</span>
+        </div>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="/service/service.html">Services</a></li>
+        <li><a href="/service/service.html#pricing">Subcription</a></li>
+        <li><a href="/about/about.html">About Us</a></li>
+        <li><a href="/blog/blog.html">Blog</a></li>
+        <li><a href="/team/team.html">Team</a></li>
+        <li><a href="/career/career.html">Careers</a></li>
+        <li><a href="/about/about.html#whyus">Why Choose Us</a></li>
+        <li><a href="/contact/contact.html">Contact</a></li> 
+    </ul>
+
+    <div class="nav-actions">
+        <a href="tel:+919876543210" class="btn-pill hide-mobile">Call Us</a>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+</nav>
+
+<!-- ══════════════════════════════════════════
+     PASTE THIS BLOCK RIGHT AFTER </nav> in index.html
+     ══════════════════════════════════════════ -->
+
+<!-- MOBILE OVERLAY (backdrop) -->
+<div class="mobile-overlay" id="mobileOverlay"></div>
+
+<!-- MOBILE DRAWER (slides in from right) -->
+<div class="mobile-drawer" id="mobileDrawer" role="dialog" aria-label="Navigation menu">
+
+  <!-- Header -->
+  <div class="drawer-header">
+    <a href="index.html" class="drawer-logo">
+      <img src="assets/logo.png" alt="Creative Advs logo" width="36" height="36">
+      <div class="drawer-logo-text">
+        <span class="dl1">Creative Advs</span>
+        <span class="dl2">Digital Marketing</span>
+      </div>
+    </a>
+    <button class="drawer-close" id="drawerClose" aria-label="Close menu">
+      <svg viewBox="0 0 24 24">
+        <line x1="18" y1="6" x2="6" y2="18"/>
+        <line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Nav links -->
+  <nav class="drawer-nav" aria-label="Mobile navigation">
+    <div class="drawer-section-label">Navigation</div>
+    <a href="/service/service.html">Services <span class="dn-arrow">›</span></a>
+    <a href="/portfolio/portfolio.html">Work <span class="dn-arrow">›</span></a>
+    <a href="about/about.html">About Us <span class="dn-arrow">›</span></a>
+    <a href="/blog/blog.html">Blog <span class="dn-arrow">›</span></a>
+    <div class="drawer-divider"></div>
+    <div class="drawer-section-label">More</div>
+    <a href="/team/team.html">Team <span class="dn-arrow">›</span></a>
+    <a href="/career/career.html">Careers <span class="dn-arrow">›</span></a>
+    <a href="/testimonial/testimonial.html">Testimonials <span class="dn-arrow">›</span></a>
+    <a href="/contact/contact.html">Contact <span class="dn-arrow">›</span></a>
+  </nav>
+
+  <!-- CTA buttons -->
+  <div class="drawer-ctas">
+    <a href="contact/contact.html" class="drawer-btn-primary">📞 Contact Us</a>
+    <a href="contact/contact.html" class="drawer-btn-outline">Get a Free Quote</a>
+  </div>
+
+  <!-- Contact info -->
+  <div class="drawer-contact">
+    <a href="tel:+917397645521" class="drawer-contact-item">
+      <div class="dci-icon" style="background:rgba(41,165,155,0.1)">
+        <svg viewBox="0 0 24 24" fill="#29A59B">
+          <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/>
+        </svg>
+      </div>
+      +91 7397645521
+    </a>
+    <a href="mailto:sales@creativeadvs.in" class="drawer-contact-item">
+      <div class="dci-icon" style="background:rgba(124,58,237,0.1)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+          <polyline points="22,6 12,13 2,6"/>
+        </svg>
+      </div>
+      sales@creativeadvs.in
+    </a>
+  </div>
+
+  <!-- Social icons -->
+  <div class="drawer-social">
+    <a href="#" class="drawer-soc" aria-label="LinkedIn">in</a>
+    <a href="#" class="drawer-soc" aria-label="Facebook">fb</a>
+    <a href="#" class="drawer-soc" aria-label="Twitter">tw</a>
+    <a href="#" class="drawer-soc" aria-label="Instagram">ig</a>
+    <a href="#" class="drawer-soc" aria-label="YouTube">yt</a>
+  </div>
+
+</div>
+<!-- ══ END MOBILE DRAWER ══ -->
+
+    <!-- ════════ HERO ════════ -->
+    <section class="hero">
+        <div class="hs-1 hero-shape"></div>
+        <div class="hs-2 hero-shape"></div>
+        <div class="hs-3 hero-shape"></div>
+        <div class="dots-grid"></div>
+        <div class="hero-inner">
+            <div class="hero-tag reveal">The People Behind the Work</div>
+            <h1 class="reveal reveal-delay-1">Meet the <em>Brilliant</em><br>Minds Driving Results</h1>
+            <p class="reveal reveal-delay-2">We're a team of strategists, creatives, data nerds, and storytellers —
+                united by one obsession: making your brand impossible to ignore.</p>
+            <div class="breadcrumb reveal reveal-delay-3">
+                <a href="/index.html">Home</a>
+                <span style="color:#CBD5E1;">›</span>
+                <span>Our Team</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════ VALUES STRIP ════════ -->
+    <div class="values-strip">
+        <div class="val-item reveal">
+            <div class="val-icon"><svg viewBox="0 0 20 20" fill="#FF4D1C">
+                    <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg></div>
+            <span class="val-text">Excellence First</span>
+        </div>
+        <div class="val-sep"></div>
+        <div class="val-item reveal reveal-delay-1">
+            <div class="val-icon"><svg viewBox="0 0 20 20" fill="#14B8A6">
+                    <path
+                        d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
+                </svg></div>
+            <span class="val-text">Collaborative Culture</span>
+        </div>
+        <div class="val-sep"></div>
+        <div class="val-item reveal reveal-delay-2">
+            <div class="val-icon"><svg viewBox="0 0 20 20" fill="#7C3AED">
+                    <path
+                        d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" />
+                </svg></div>
+            <span class="val-text">Data-Driven Decisions</span>
+        </div>
+        <div class="val-sep"></div>
+        <div class="val-item reveal reveal-delay-3">
+            <div class="val-icon"><svg viewBox="0 0 20 20" fill="#FBBF24">
+                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                    <path fill-rule="evenodd"
+                        d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
+                        clip-rule="evenodd" />
+                </svg></div>
+            <span class="val-text">Radical Transparency</span>
+        </div>
+        <div class="val-sep"></div>
+        <div class="val-item reveal reveal-delay-4">
+            <div class="val-icon"><svg viewBox="0 0 20 20" fill="#FF4D1C">
+                    <path fill-rule="evenodd"
+                        d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z"
+                        clip-rule="evenodd" />
+                </svg></div>
+            <span class="val-text">Bold Creativity</span>
+        </div>
+    </div>
+
+    <!-- ════════ LEADERSHIP ════════ -->
+    <section class="leadership-section">
+        <div class="leadership-header">
+            <div class="section-tag reveal" style="justify-content:center">Leadership</div>
+            <h2 class="section-h2 reveal reveal-delay-1" style="text-align:center">The <em>Visionaries</em><br>Leading
+                the Charge</h2>
+            <p class="reveal reveal-delay-2">Our founders and department heads bring decades of combined experience
+                across marketing, technology, design, and business strategy.</p>
+        </div>
+            <div class="leader-grid">
+            <div class="leader-card reveal">
+                <div class="leader-img-container">
+                    <img src="assets/aravind.jpg" alt="Aravindan" class="leader-photo">
+                    <div class="leader-hover-content">
+                        <p class="leader-bio">12 years building brands from zero to category leadership. </p>
+                        <div class="leader-socials">
+                            <a href="#" class="leader-soc">in</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="leader-info">
+                    <div class="leader-name">Aravindan</div>
+                    <div class="leader-role">Founder & CEO</div>
+                </div>
+            </div>
+
+            <div class="leader-card reveal reveal-delay-1">
+                <div class="leader-img-container">
+                    <img src="assets/Punya-cut.jpeg" alt="Punyaa" class="leader-photo">
+                    <div class="leader-hover-content">
+                        <p class="leader-bio">Operations wizard scaling startups with rigorous systems and team-first leadership.</p>
+                        <div class="leader-socials">
+                            <a href="#" class="leader-soc">in</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="leader-info">
+                    <div class="leader-name">Punyaa</div>
+                    <div class="leader-role">Chief Operating Officer</div>
+                </div>
+            </div>
+
+            <div class="leader-card reveal reveal-delay-2">
+                <div class="leader-img-container">
+                    <img src="assets/nithin-cut.jpg" alt="Nithin" class="leader-photo">
+                    <div class="leader-hover-content">
+                        <p class="leader-bio"></p>
+                        <div class="leader-socials">
+                            <a href="#" class="leader-soc">in</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="leader-info">
+                    <div class="leader-name">Nithin</div>
+                    <div class="leader-role">Web Developer</div>
+                </div>
+            </div>
+
+            <div class="leader-card reveal">
+                <div class="leader-img-container">
+                    <img src="assets/sreenithi-cut.jpeg" alt="Srinithi" class="leader-photo">
+                    <div class="leader-hover-content">
+                        <p class="leader-bio"></p>
+                        <div class="leader-socials">
+                            <a href="#" class="leader-soc">in</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="leader-info">
+                    <div class="leader-name">Srinithi</div>
+                    <div class="leader-role">Ecommerce Strategist</div>
+                </div>
+            </div>
+
+            <div class="leader-card reveal reveal-delay-1">
+                <div class="leader-img-container">
+                    <img src="assets/vinothkumar.png" alt="vinothkumar" class="leader-photo">
+                    <div class="leader-hover-content">
+                        <p class="leader-bio"></p>
+                        <div class="leader-socials">
+                            <a href="#" class="leader-soc">in</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="leader-info">
+                    <div class="leader-name">Vinoth Kumar</div>
+                    <div class="leader-role">Graphic Designer</div>
+                </div>
+            </div>
+            <!--
+            <div class="leader-card reveal reveal-delay-2">
+                <div class="leader-img-container">
+                    <img src="video-photo.jpg" alt="Name" class="leader-photo">
+                    <div class="leader-hover-content">
+                        <p class="leader-bio"></p>
+                        <div class="leader-socials">
+                            <a href="#" class="leader-soc">in</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="leader-info">
+                    <div class="leader-name">.</div>
+                    <div class="leader-role">Lead Video Editor</div>
+                </div>
+            </div>-->
+        </div>
+
+    </section>
+
+    <!-- ════════ STATS BAND ════════ -->
+    <div class="stats-band">
+        <div class="stat-b reveal">
+            <div class="num">10+</div>
+            <div class="lbl">Team Members</div>
+        </div>
+        <div class="stat-b reveal reveal-delay-1">
+            <div class="num">8</div>
+            <div class="lbl">Departments</div>
+        </div>
+        <div class="stat-b reveal reveal-delay-2">
+            <div class="num">6</div>
+            <div class="lbl">Cities Represented</div>
+        </div>
+        <div class="stat-b reveal reveal-delay-3">
+            <div class="num">12+</div>
+            <div class="lbl">Years Combined Exp.</div>
+        </div>
+    </div>
+
+
+    <!-- ════════ CULTURE ════════ -->
+    <section class="culture-section">
+        <div class="culture-inner">
+            <div class="culture-visual reveal">
+                <svg width="100%" viewBox="0 0 460 420" xmlns="http://www.w3.org/2000/svg" style="padding:2.5rem;">
+                    <!-- Culture illustration: people collaborating -->
+                    <!-- Table -->
+                    <rect x="80" y="240" width="300" height="12" rx="6" fill="#E2E0F0" />
+                    <rect x="100" y="252" width="12" height="60" rx="4" fill="#E2E0F0" />
+                    <rect x="348" y="252" width="12" height="60" rx="4" fill="#E2E0F0" />
+
+                    <!-- Laptop on table -->
+                    <rect x="170" y="200" width="120" height="44" rx="6" fill="#0F172A" />
+                    <rect x="176" y="206" width="108" height="34" rx="4" fill="#1E293B" />
+                    <!-- Screen glow -->
+                    <rect x="180" y="210" width="40" height="26" rx="2" fill="#FF4D1C" opacity="0.18" />
+                    <rect x="226" y="210" width="52" height="12" rx="2" fill="#7C3AED" opacity="0.15" />
+                    <rect x="226" y="226" width="36" height="8" rx="2" fill="#14B8A6" opacity="0.2" />
+                    <!-- Laptop base -->
+                    <rect x="155" y="242" width="150" height="6" rx="3" fill="#0F172A" />
+
+                    <!-- Person 1 left (seated) -->
+                    <circle cx="120" cy="165" r="24" fill="#FBBF9A" />
+                    <path d="M96 220 Q100 195 120 193 Q140 195 144 220" fill="#FF4D1C" opacity="0.8" />
+                    <!-- Hair -->
+                    <path d="M96 160 Q98 140 120 138 Q142 140 144 160" fill="#1a1a1a" />
+                    <!-- Arm pointing to screen -->
+                    <path d="M140 205 Q155 215 168 218" stroke="#FBBF9A" stroke-width="10" stroke-linecap="round"
+                        fill="none" />
+
+                    <!-- Person 2 right (standing) -->
+                    <circle cx="340" cy="155" r="26" fill="#8B7355" />
+                    <path d="M314 215 Q318 188 340 186 Q362 188 366 215" fill="#7C3AED" opacity="0.8" />
+                    <!-- Hair -->
+                    <ellipse cx="340" cy="132" rx="18" ry="14" fill="#1a1a1a" />
+                    <!-- Glasses -->
+                    <rect x="328" y="152" width="10" height="8" rx="4" fill="none" stroke="#1a1a1a"
+                        stroke-width="1.5" />
+                    <rect x="342" y="152" width="10" height="8" rx="4" fill="none" stroke="#1a1a1a"
+                        stroke-width="1.5" />
+                    <line x1="338" y1="156" x2="342" y2="156" stroke="#1a1a1a" stroke-width="1" />
+
+                    <!-- Person 3 top center (celebrating / idea) -->
+                    <circle cx="230" cy="80" r="22" fill="#FBBF9A" />
+                    <path d="M208 128 Q212 108 230 106 Q248 108 252 128" fill="#14B8A6" opacity="0.8" />
+                    <!-- Hair bun -->
+                    <ellipse cx="230" cy="60" rx="14" ry="10" fill="#1a1a1a" />
+                    <!-- Arms up -->
+                    <path d="M208 115 Q196 100 190 88" stroke="#FBBF9A" stroke-width="9" stroke-linecap="round"
+                        fill="none" />
+                    <path d="M252 115 Q264 100 270 88" stroke="#FBBF9A" stroke-width="9" stroke-linecap="round"
+                        fill="none" />
+                    <!-- Light bulb above -->
+                    <circle cx="230" cy="32" r="16" fill="#FBBF24" opacity="0.25" stroke="#FBBF24" stroke-width="2" />
+                    <circle cx="230" cy="32" r="9" fill="#FBBF24" opacity="0.5" />
+                    <line x1="226" y1="44" x2="234" y2="44" stroke="#FBBF24" stroke-width="2" stroke-linecap="round" />
+                    <line x1="227" y1="48" x2="233" y2="48" stroke="#FBBF24" stroke-width="2" stroke-linecap="round" />
+
+                    <!-- Speech bubbles -->
+                    <ellipse cx="160" cy="130" rx="32" ry="18" fill="#fff" stroke="#E2E0F0" stroke-width="1.5" />
+                    <path d="M152 147 Q148 158 142 162 Q155 156 162 148" fill="#fff" stroke="#E2E0F0"
+                        stroke-width="1" />
+                    <text x="144" y="134" font-family="Caveat,cursive" font-size="12" fill="#FF4D1C"
+                        font-weight="700">Ideas!</text>
+
+                    <ellipse cx="310" cy="110" rx="32" ry="18" fill="#fff" stroke="#E2E0F0" stroke-width="1.5" />
+                    <path d="M318 127 Q322 138 328 142 Q315 136 308 128" fill="#fff" stroke="#E2E0F0"
+                        stroke-width="1" />
+                    <text x="293" y="114" font-family="Caveat,cursive" font-size="12" fill="#7C3AED"
+                        font-weight="700">Let's build!</text>
+
+                    <!-- Data dots decoration -->
+                    <circle cx="60" cy="300" r="5" fill="#FF4D1C" opacity="0.3" />
+                    <circle cx="80" cy="320" r="3" fill="#7C3AED" opacity="0.3" />
+                    <circle cx="400" cy="290" r="5" fill="#14B8A6" opacity="0.3" />
+                    <circle cx="420" cy="310" r="3" fill="#FBBF24" opacity="0.3" />
+                </svg>
+            </div>
+
+            <div class="culture-content reveal reveal-delay-2">
+                <div class="section-tag">Our Culture</div>
+                <h2 class="section-h2">A Place Where<br><em>Great Work</em> Happens</h2>
+                <p>We believe the best marketing comes from the happiest, most empowered teams. At Creative Advs,
+                    culture isn't a slide in a deck — it's the reason people stay for years and give their best work
+                    every single day.</p>
+                <ul class="culture-values-list">
+                    <li>
+                        <div class="cv-icon" style="background:rgba(255,77,28,0.1);">🚀</div>
+                        <div class="cv-text">
+                            <h5>Ownership Mindset</h5>
+                            <p>Every team member runs their area like a founder. No micro-management, full
+                                accountability.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cv-icon" style="background:rgba(124,58,237,0.1);">🧠</div>
+                        <div class="cv-text">
+                            <h5>Continuous Learning</h5>
+                            <p>Monthly L&D budget, speaker sessions, and a shared library of the best marketing
+                                resources.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cv-icon" style="background:rgba(20,184,166,0.1);">🤝</div>
+                        <div class="cv-text">
+                            <h5>Radical Candour</h5>
+                            <p>We speak up kindly. Feedback is a gift — we give it and receive it with the same
+                                openness.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cv-icon" style="background:rgba(251,191,36,0.12);">🌏</div>
+                        <div class="cv-text">
+                            <h5>Remote-First Flexibility</h5>
+                            <p>Work from anywhere in India. Results over hours, always.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+  
+
+    <!-- ════════ FOOTER ════════ -->
+    <footer class="footer-section">
+        <div class="footer-inner">
+            <div>
+                <a href="#" class="footer-logo-wrap">
+                     <img src="/assets/logo.png" alt="logo" class="logo-img" width="68" height="78">
+                    <div class="footer-logo-text">
+                        <span class="fl1">Creative Advs</span>
+                        <span class="fl2">Digital Marketing</span>
+                    </div>
+                </a>
+                <div class="footer-map">
+                    <iframe
+                        src="https://www.google.com/maps?q=43%20%26%2044%2C%20VN%20Industrial%20Estate%2C%20Playworkz%20Coworking%20Space%2C%20West%2C%20Peelamedu%2C%20Bharathi%20Colony%2C%20Coimbatore%2C%20Tamil%20Nadu%20641004&output=embed"
+                        allowfullscreen loading="lazy">
+                    </iframe>
+
+                    <a href="https://www.google.com/maps?q=43%20%26%2044%2C%20VN%20Industrial%20Estate%2C%20Playworkz%20Coworking%20Space%2C%20West%2C%20Peelamedu%2C%20Bharathi%20Colony%2C%20Coimbatore%2C%20Tamil%20Nadu%20641004"
+                        target="_blank" class="map-badge">
+
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="#1a73e8">
+                            <path
+                                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                        </svg>
+
+                        Open in Maps
+                    </a>
+                </div>
+                <div class="footer-support-card">
+                    <div>
+                        <p class="support-label">Talk to our support</p>
+                        <p class="support-number">+91 9487882058</p>
+                    </div>
+                    <div class="support-icon">
+                        <svg viewBox="0 0 24 24" fill="#fff">
+                            <path
+                                d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-col-links">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-links">
+                <h5>Departments</h5>
+                <ul>
+                    <li><a href="#">Marketing Team</a></li>
+                    <li><a href="#">Design Studio</a></li>
+                    <li><a href="#">SEO & Content</a></li>
+                    <li><a href="#">Development</a></li>
+                    <li><a href="#">Open Roles</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-contact">
+                <h5>Get in Touch</h5>
+                <div class="contact-office">
+                    <div class="contact-office-title"><span>🇮🇳</span><span>INDIA – Head Office</span></div>
+                    <div class="contact-detail">
+                        <svg viewBox="0 0 24 24" fill="#94A3B8">
+                            <path
+                                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                        </svg>
+                        <span>43 & 44, VN Industrial Estate, Playworkz Coworking Space, West, Peelamedu, Bharathi
+                            Colony, Coimbatore, Tamil Nadu 641004.</span>
+                    </div>
+                    <div class="contact-detail">
+                        <svg viewBox="0 0 24 24" fill="#FF4D1C">
+                            <path
+                                d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" />
+                        </svg>
+                        <span><span class="hl">HR:</span> <a href="tel:+917397645521">+91 7397645521</a></span>
+                    </div>
+                    <div class="contact-detail">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#FF4D1C" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
+                        </svg>
+                        <a href="mailto:sales@creativeadvs.in">sales@creativeadvs.in</a>
+                    </div>
+                </div>
+               <a href="https://wa.me/917397645521?text=Hi%20Creative%20Advs!%20I'm%20interested%20in%20your%20digital%20marketing%20services.%20Can%20we%20chat?" 
+                    class="footer-cta-btn" 
+                    target="_blank">
+                Get in Touch
+                </a>
+            </div>
+        </div>
+        <div class="footer-social-row">
+            <div class="footer-socials-list">
+                <a href="https://in.linkedin.com/company/creative-advs-private-limited" class="footer-soc" target="_blank">in</a>
+                <a href="https://www.facebook.com/profile.php?id=100077503988653" class="footer-soc" target="_blank">fb</a>
+                <a href="https://www.instagram.com/creativeadvs/" class="footer-soc" target="_blank">ig</a>
+                <a href="https://www.youtube.com/@creativeadvs4626" class="footer-soc" target="_blank">yt</a>
+            </div>
+            <p class="footer-tagline">Crafting brands that <strong>stand out</strong> &amp; campaigns that
+                <strong>convert.</strong>
+            </p>
+        </div>
+        <div class="footer-copyright">
+            Copyright © 2026 <a href="#">Creative Advs</a>. All Rights Reserved. &nbsp;|&nbsp;
+            <a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Terms of Service</a>
+        </div>
+    </footer>
+
+    <script src="teamscript.js"></script>
+    <script src="/script.js"></script>
+</body>
+
+</html>

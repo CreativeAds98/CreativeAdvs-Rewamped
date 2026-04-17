@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Advs — Digital Marketing Agency</title>
+    <link rel="icon" type="image/png" href="/assets/logo.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- GET QUOTE SIDEBAR 
+    <button onclick="openQuoteModal()" class="get-quote">Get a Quote</button>-->
+
+
+<!-- NAVBAR -->
+<nav>
+    <a href="index.html" class="logo-wrap">
+        <img src="assets/logo.png" alt="logo" class="logo-img" width="48" height="48">
+        <div class="logo-text-block">
+            <span class="l1">Creative Advs</span>
+            <span class="l2">Digital Marketing</span>
+        </div>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="service/service.html">Services</a></li>
+        <li><a href="/service/service.html#pricing">Subcription</a></li>
+        <li><a href="about/about.html">About Us</a></li>
+        <li><a href="blog/blog.html">Blog</a></li>
+        <li><a href="team/team.html">Team</a></li>
+        <li><a href="career/career.html">Careers</a></li>
+        <li><a href="/about/about.html#whyus">Why Choose Us</a></li>
+        <li><a href="contact/contact.html">Contact</a></li> 
+    </ul>
+
+    <div class="nav-actions">
+        <a href="tel:+919876543210" class="btn-pill hide-mobile">Call Us</a>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+</nav>
+
+<!-- ══════════════════════════════════════════
+     PASTE THIS BLOCK RIGHT AFTER </nav> in index.html
+     ══════════════════════════════════════════ -->
+
+<!-- MOBILE OVERLAY (backdrop) -->
+<div class="mobile-overlay" id="mobileOverlay"></div>
+
+<!-- MOBILE DRAWER (slides in from right) -->
+<div class="mobile-drawer" id="mobileDrawer" role="dialog" aria-label="Navigation menu">
+
+  <!-- Header -->
+  <div class="drawer-header">
+    <a href="index.html" class="drawer-logo">
+      <img src="assets/logo.png" alt="Creative Advs logo" width="36" height="36">
+      <div class="drawer-logo-text">
+        <span class="dl1">Creative Advs</span>
+        <span class="dl2">Digital Marketing</span>
+      </div>
+    </a>
+    <button class="drawer-close" id="drawerClose" aria-label="Close menu">
+      <svg viewBox="0 0 24 24">
+        <line x1="18" y1="6" x2="6" y2="18"/>
+        <line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Nav links -->
+  <nav class="drawer-nav" aria-label="Mobile navigation">
+    <div class="drawer-section-label">Navigation</div>
+    <a href="service/service.html">Services <span class="dn-arrow">›</span></a>
+    <a href="/">Work <span class="dn-arrow">›</span></a>
+    <a href="about/about.html">About Us <span class="dn-arrow">›</span></a>
+    <a href="blog/blog.html">Blog <span class="dn-arrow">›</span></a>
+    <div class="drawer-divider"></div>
+    <div class="drawer-section-label">More</div>
+    <a href="team/team.html">Team <span class="dn-arrow">›</span></a>
+    <a href="career/career.html">Careers <span class="dn-arrow">›</span></a>
+    <a href="testimonial/testimonial.html">Testimonials <span class="dn-arrow">›</span></a>
+    <a href="contact/contact.html">Contact <span class="dn-arrow">›</span></a>
+  </nav>
+
+  <!-- CTA buttons -->
+  <div class="drawer-ctas">
+    <a href="contact/contact.html" class="drawer-btn-primary">📞 Contact Us</a>
+    <a href="contact/contact.html" class="drawer-btn-outline">Get a Free Quote</a>
+  </div>
+
+  <!-- Contact info -->
+  <div class="drawer-contact">
+    <a href="tel:+917397645521" class="drawer-contact-item">
+      <div class="dci-icon" style="background:rgba(41,165,155,0.1)">
+        <svg viewBox="0 0 24 24" fill="#29A59B">
+          <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/>
+        </svg>
+      </div>
+      +91 7397645521
+    </a>
+    <a href="mailto:sales@creativeadvs.in" class="drawer-contact-item">
+      <div class="dci-icon" style="background:rgba(124,58,237,0.1)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+          <polyline points="22,6 12,13 2,6"/>
+        </svg>
+      </div>
+      sales@creativeadvs.in
+    </a>
+  </div>
+
+  <!-- Social icons -->
+  <div class="drawer-social">
+    <a href="#" class="drawer-soc" aria-label="LinkedIn">in</a>
+    <a href="#" class="drawer-soc" aria-label="Facebook">fb</a>
+    <a href="#" class="drawer-soc" aria-label="Twitter">tw</a>
+    <a href="#" class="drawer-soc" aria-label="Instagram">ig</a>
+    <a href="#" class="drawer-soc" aria-label="YouTube">yt</a>
+  </div>
+
+</div>
+<!-- ══ END MOBILE DRAWER ══ -->
+
+    <!-- HERO -->
+    <section class="hero">
+        <!-- BG shapes — purple, coral, teal -->
+        <div class="bg-shape shape-purple"></div>
+        <div class="bg-shape shape-coral"></div>
+        <div class="bg-shape shape-teal"></div>
+
+        <div class="hero-inner">
+
+            <!-- LEFT: Text -->
+            <div class="hero-text">
+                <h1 class="hero-heading">
+                    Make Your
+                    <em class="cursive">Brand</em>
+                    Come Alive
+                </h1>
+
+                <!-- Pencil underline -->
+                <svg width="230" height="28" viewBox="0 0 230 28" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    style="margin-top:-0.3rem;margin-bottom:0.3rem;">
+                    <path d="M8 20 Q65 7 125 15 Q178 22 222 10" stroke="#FF4D1C" stroke-width="2" stroke-linecap="round"
+                        fill="none" />
+                    <polygon points="214,4 224,12 217,14" fill="#FF4D1C" />
+                    <line x1="214" y1="4" x2="222" y2="10" stroke="#FF4D1C" stroke-width="1.5" />
+                </svg>
+
+                <div class="hero-btns">
+                    <a href="#process" class="hero-btn-outline">Our Process</a>
+                    <a href="/service/service.html" class="hero-btn-accent">View Services</a>
+                </div>
+            </div>
+
+            <!-- RIGHT: Illustration -->
+            <div class="hero-illustration">
+                <!-- Floating doodle words -->
+                <span class="doodle doodle-idea">IDEA</span>
+                <span class="doodle doodle-www">WWW</span>
+                <span class="doodle doodle-market">MARKET</span>
+
+                <!-- SVG Illustration -->
+                <svg viewBox="0 0 520 420" width="100%" xmlns="http://www.w3.org/2000/svg" style="max-width:560px;">
+
+                    <!-- Bar chart icon (top right) -->
+                    <g transform="translate(338,28)">
+                        <rect x="0" y="42" width="16" height="28" fill="none" stroke="#334155" stroke-width="2"
+                            rx="2" />
+                        <rect x="22" y="26" width="16" height="44" fill="none" stroke="#334155" stroke-width="2"
+                            rx="2" />
+                        <rect x="44" y="10" width="16" height="60" fill="none" stroke="#334155" stroke-width="2"
+                            rx="2" />
+                        <line x1="0" y1="72" x2="62" y2="72" stroke="#334155" stroke-width="2" />
+                        <polyline points="0,52 22,36 44,22 62,12" fill="none" stroke="#FF4D1C" stroke-width="2.5"
+                            stroke-linecap="round" />
+                    </g>
+
+                    <!-- Network nodes (middle right) -->
+                    <g transform="translate(366,138)">
+                        <circle cx="20" cy="0" r="11" fill="none" stroke="#7C3AED" stroke-width="2" />
+                        <circle cx="0" cy="36" r="9" fill="none" stroke="#334155" stroke-width="2" />
+                        <circle cx="40" cy="36" r="9" fill="none" stroke="#334155" stroke-width="2" />
+                        <line x1="20" y1="11" x2="4" y2="28" stroke="#7C3AED" stroke-width="1.8" />
+                        <line x1="20" y1="11" x2="36" y2="28" stroke="#7C3AED" stroke-width="1.8" />
+                    </g>
+
+                    <!-- Play button circle -->
+                    <g transform="translate(298,118)">
+                        <circle cx="28" cy="28" r="28" fill="none" stroke="#14B8A6" stroke-width="2.5" />
+                        <polygon points="22,16 22,40 44,28" fill="#14B8A6" />
+                    </g>
+
+                    <!-- Chat bubble -->
+                    <g transform="translate(378,208)">
+                        <ellipse cx="36" cy="22" rx="34" ry="22" fill="none" stroke="#334155" stroke-width="2" />
+                        <path d="M20 40 Q18 52 10 56 Q22 52 30 44" fill="#334155" />
+                        <circle cx="22" cy="22" r="3" fill="#FF4D1C" />
+                        <circle cx="36" cy="22" r="3" fill="#FF4D1C" />
+                        <circle cx="50" cy="22" r="3" fill="#FF4D1C" />
+                    </g>
+
+                    <!-- Pie chart (bottom right) -->
+                    <g transform="translate(353,293)">
+                        <path d="M40,40 L40,5 A35,35 0 0,1 70,55 Z" fill="none" stroke="#FF4D1C" stroke-width="2.2" />
+                        <path d="M40,40 L70,55 A35,35 0 0,1 10,62 Z" fill="none" stroke="#7C3AED" stroke-width="2.2" />
+                        <path d="M40,40 L10,62 A35,35 0 0,1 40,5 Z" fill="none" stroke="#14B8A6" stroke-width="2.2" />
+                    </g>
+
+                    <!-- Magnifying glass -->
+                    <g transform="translate(218,188)">
+                        <circle cx="28" cy="28" r="27" fill="none" stroke="#334155" stroke-width="2.5" />
+                        <line x1="48" y1="48" x2="68" y2="68" stroke="#334155" stroke-width="3"
+                            stroke-linecap="round" />
+                    </g>
+
+                    <!-- LAPTOP -->
+                    <g transform="translate(38, 108)">
+                        <!-- Screen body -->
+                        <rect x="30" y="0" width="252" height="172" rx="10" fill="#0F172A" stroke="#334155"
+                            stroke-width="2" />
+                        <!-- Screen white area -->
+                        <rect x="40" y="10" width="232" height="152" rx="6" fill="#fff" />
+
+                        <!-- Bar chart on screen — accent colors -->
+                        <!-- Coral bar -->
+                        <rect x="80" y="58" width="38" height="84" rx="4" fill="#FF4D1C" />
+                        <!-- Purple bar -->
+                        <rect x="130" y="88" width="38" height="54" rx="4" fill="#7C3AED" />
+                        <!-- Teal bar -->
+                        <rect x="180" y="38" width="38" height="104" rx="4" fill="#14B8A6" opacity="0.85" />
+                        <!-- baseline -->
+                        <line x1="70" y1="144" x2="228" y2="144" stroke="#e2e0f0" stroke-width="1.5" />
+
+                        <!-- Camera dot -->
+                        <circle cx="156" cy="5" r="3" fill="#475569" />
+
+                        <!-- Keyboard base -->
+                        <rect x="0" y="180" width="312" height="20" rx="4" fill="#1E293B" stroke="#334155"
+                            stroke-width="1.5" />
+                        <!-- Touchpad -->
+                        <rect x="111" y="185" width="90" height="10" rx="3" fill="#334155" />
+
+                        <!-- Keys row 1 -->
+                        <g fill="#334155">
+                            <rect x="35" y="175" width="14" height="8" rx="2" />
+                            <rect x="54" y="175" width="14" height="8" rx="2" />
+                            <rect x="73" y="175" width="14" height="8" rx="2" />
+                            <rect x="92" y="175" width="14" height="8" rx="2" />
+                            <rect x="111" y="175" width="14" height="8" rx="2" />
+                            <rect x="130" y="175" width="14" height="8" rx="2" />
+                            <rect x="149" y="175" width="14" height="8" rx="2" />
+                            <rect x="168" y="175" width="14" height="8" rx="2" />
+                            <rect x="187" y="175" width="14" height="8" rx="2" />
+                            <rect x="206" y="175" width="14" height="8" rx="2" />
+                            <rect x="225" y="175" width="14" height="8" rx="2" />
+                            <rect x="244" y="175" width="14" height="8" rx="2" />
+                            <!-- Keys row 2 -->
+                            <rect x="35" y="162" width="14" height="8" rx="2" />
+                            <rect x="54" y="162" width="14" height="8" rx="2" />
+                            <rect x="73" y="162" width="14" height="8" rx="2" />
+                            <rect x="92" y="162" width="14" height="8" rx="2" />
+                            <rect x="111" y="162" width="14" height="8" rx="2" />
+                            <rect x="130" y="162" width="14" height="8" rx="2" />
+                            <rect x="149" y="162" width="14" height="8" rx="2" />
+                            <rect x="168" y="162" width="14" height="8" rx="2" />
+                            <rect x="187" y="162" width="14" height="8" rx="2" />
+                            <rect x="206" y="162" width="14" height="8" rx="2" />
+                            <rect x="225" y="162" width="14" height="8" rx="2" />
+                            <rect x="244" y="162" width="24" height="8" rx="2" />
+                        </g>
+                    </g>
+
+                    <!-- Decorative dashed line -->
+                    <line x1="30" y1="360" x2="180" y2="360" stroke="#CBD5E1" stroke-width="1.5"
+                        stroke-dasharray="5,4" />
+                </svg>
+            </div>
+        </div>
+
+        <!-- Slider dots -->
+        <div class="slider-dots">
+            <span class="dot dot-1"></span>
+            <span class="dot dot-2"></span>
+            <span class="dot dot-3"></span>
+        </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════
+              WHY WORK WITH US SECTION
+        ══════════════════════════════════════════ -->
+
+    <section class="why-section">
+        <h2 class="why-heading">Why Work With Us?</h2>
+
+        <div class="why-inner">
+
+            <!-- LEFT: back arrow + label -->
+            <div class="why-left">
+                <!-- Sketchy left arrow -->
+                <svg class="why-arrow-left" width="90" height="60" viewBox="0 0 90 60" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M80 30 Q50 28 18 30" stroke="#334155" stroke-width="2.5" stroke-linecap="round" />
+                    <path d="M28 18 Q14 28 18 30 Q14 32 28 42" stroke="#334155" stroke-width="2.5"
+                        stroke-linecap="round" stroke-linejoin="round" fill="none" />
+                    <!-- Sketch hatching on arrowhead -->
+                    <line x1="16" y1="24" x2="8" y2="20" stroke="#334155" stroke-width="1.5" stroke-linecap="round"
+                        opacity="0.5" />
+                    <line x1="14" y1="28" x2="4" y2="26" stroke="#334155" stroke-width="1.5" stroke-linecap="round"
+                        opacity="0.5" />
+                    <line x1="16" y1="36" x2="8" y2="40" stroke="#334155" stroke-width="1.5" stroke-linecap="round"
+                        opacity="0.5" />
+                    <line x1="14" y1="32" x2="4" y2="34" stroke="#334155" stroke-width="1.5" stroke-linecap="round"
+                        opacity="0.5" />
+                </svg>
+                <div class="why-label">
+                    <span>Who is</span>
+                    <strong>Creative Advs?</strong>
+                </div>
+            </div>
+
+            <!-- CENTER: curly brace + arrows -->
+            <div class="why-center">
+                <svg width="120" height="300" viewBox="0 0 120 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Curly brace shape: left side open -->
+                    <!-- Top arm going to upper card -->
+                    <path d="M80 150 Q55 150 50 130 Q45 110 30 100" stroke="#9CA3AF" stroke-width="2"
+                        stroke-linecap="round" fill="none" />
+                    <!-- Bottom arm going to lower card -->
+                    <path d="M80 150 Q55 150 50 170 Q45 190 30 200" stroke="#9CA3AF" stroke-width="2"
+                        stroke-linecap="round" fill="none" />
+
+                    <!-- Arrow tip top -->
+                    <polygon points="22,96 34,94 30,106" fill="#334155" opacity="0.7" />
+                    <!-- Arrow tip bottom -->
+                    <polygon points="22,204 34,196 30,208" fill="#334155" opacity="0.7" />
+
+                    <!-- Center knot dot -->
+                    <circle cx="82" cy="150" r="4" fill="#9CA3AF" />
+                </svg>
+            </div>
+
+            <!-- RIGHT: two feature cards -->
+            <div class="why-right">
+
+                <!-- Card 1: Different -->
+                <div class="why-card">
+                    <div class="why-card-icon">
+                        <!-- People / team icon — doodle style -->
+                        <svg width="76" height="70" viewBox="0 0 76 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Back person left -->
+                            <circle cx="20" cy="20" r="12" fill="#CBD5E1" stroke="#475569" stroke-width="1.5" />
+                            <path d="M4 58 Q6 40 20 38 Q26 37 30 40" stroke="#475569" stroke-width="1.5" fill="#CBD5E1"
+                                stroke-linecap="round" />
+                            <!-- Back person right -->
+                            <circle cx="56" cy="20" r="12" fill="#CBD5E1" stroke="#475569" stroke-width="1.5" />
+                            <path d="M72 58 Q70 40 56 38 Q50 37 46 40" stroke="#475569" stroke-width="1.5"
+                                fill="#CBD5E1" stroke-linecap="round" />
+                            <!-- Front person centre — accent colored -->
+                            <circle cx="38" cy="24" r="14" fill="#7C3AED" stroke="#5B21B6" stroke-width="1.5" />
+                            <!-- Face dots -->
+                            <circle cx="33" cy="22" r="2" fill="#fff" />
+                            <circle cx="43" cy="22" r="2" fill="#fff" />
+                            <path d="M33 30 Q38 35 43 30" stroke="#fff" stroke-width="1.5" fill="none"
+                                stroke-linecap="round" />
+                            <!-- Body -->
+                            <path d="M18 70 Q20 52 38 50 Q56 52 58 70" fill="#7C3AED" stroke="#5B21B6"
+                                stroke-width="1.5" stroke-linecap="round" />
+                            <!-- Accent highlight blob bottom -->
+                            <ellipse cx="38" cy="62" rx="22" ry="8" fill="#FF4D1C" opacity="0.18" />
+                        </svg>
+                    </div>
+                    <div class="why-card-body">
+                        <h3>Different</h3>
+                        <p>We strive to provide 100% custom campaigns and brand materials. We are superbly creative. We
+                            care for your product or services, which is rare in these times. And we honestly do.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2: Unique -->
+                <div class="why-card">
+                    <div class="why-card-icon">
+                        <!-- Pencils / creativity icon — doodle style -->
+                        <svg width="76" height="80" viewBox="0 0 76 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Left pencil (grey) -->
+                            <rect x="14" y="10" width="14" height="52" rx="3" fill="#CBD5E1" stroke="#475569"
+                                stroke-width="1.5" />
+                            <polygon points="14,62 28,62 21,76" fill="#CBD5E1" stroke="#475569" stroke-width="1.5"
+                                stroke-linejoin="round" />
+                            <polygon points="17,70 25,70 21,76" fill="#FBBF24" />
+                            <!-- Pencil top eraser -->
+                            <rect x="14" y="8" width="14" height="6" rx="2" fill="#F87171" />
+                            <line x1="14" y1="12" x2="28" y2="12" stroke="#475569" stroke-width="1" />
+                            <!-- Center pencil (green — tallest) -->
+                            <rect x="31" y="2" width="14" height="58" rx="3" fill="#4ADE80" stroke="#15803D"
+                                stroke-width="1.5" />
+                            <polygon points="31,60 45,60 38,76" fill="#4ADE80" stroke="#15803D" stroke-width="1.5"
+                                stroke-linejoin="round" />
+                            <polygon points="34,68 42,68 38,76" fill="#FBBF24" />
+                            <rect x="31" y="0" width="14" height="6" rx="2" fill="#F87171" />
+                            <line x1="31" y1="4" x2="45" y2="4" stroke="#15803D" stroke-width="1" />
+                            <!-- Spark lines from pencil tip -->
+                            <line x1="38" y1="4" x2="30" y2="-4" stroke="#FBBF24" stroke-width="2"
+                                stroke-linecap="round" />
+                            <line x1="38" y1="4" x2="46" y2="-3" stroke="#FBBF24" stroke-width="2"
+                                stroke-linecap="round" />
+                            <line x1="38" y1="4" x2="38" y2="-5" stroke="#FBBF24" stroke-width="2"
+                                stroke-linecap="round" />
+                            <line x1="38" y1="4" x2="26" y2="2" stroke="#FBBF24" stroke-width="1.5"
+                                stroke-linecap="round" />
+                            <line x1="38" y1="4" x2="50" y2="3" stroke="#FBBF24" stroke-width="1.5"
+                                stroke-linecap="round" />
+                            <!-- Right pencil (grey) -->
+                            <rect x="48" y="10" width="14" height="52" rx="3" fill="#CBD5E1" stroke="#475569"
+                                stroke-width="1.5" />
+                            <polygon points="48,62 62,62 55,76" fill="#CBD5E1" stroke="#475569" stroke-width="1.5"
+                                stroke-linejoin="round" />
+                            <polygon points="51,70 59,70 55,76" fill="#FBBF24" />
+                            <rect x="48" y="8" width="14" height="6" rx="2" fill="#F87171" />
+                            <line x1="48" y1="12" x2="62" y2="12" stroke="#475569" stroke-width="1" />
+                        </svg>
+                    </div>
+                    <div class="why-card-body">
+                        <h3>Unique</h3>
+                        <p>Our personality is infectious throughout your brand. Our creativity always stands out from
+                            the rest in the right way. People will continually talk about your new catchy look.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- RIGHT nav arrow -->
+            <svg class="why-arrow-right" width="90" height="60" viewBox="0 0 90 60" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 30 Q40 28 72 30" stroke="#334155" stroke-width="2.5" stroke-linecap="round" />
+                <path d="M62 18 Q76 28 72 30 Q76 32 62 42" stroke="#334155" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" fill="none" />
+                <line x1="74" y1="24" x2="82" y2="20" stroke="#334155" stroke-width="1.5" stroke-linecap="round"
+                    opacity="0.5" />
+                <line x1="76" y1="28" x2="86" y2="26" stroke="#334155" stroke-width="1.5" stroke-linecap="round"
+                    opacity="0.5" />
+                <line x1="74" y1="36" x2="82" y2="40" stroke="#334155" stroke-width="1.5" stroke-linecap="round"
+                    opacity="0.5" />
+                <line x1="76" y1="32" x2="86" y2="34" stroke="#334155" stroke-width="1.5" stroke-linecap="round"
+                    opacity="0.5" />
+            </svg>
+
+        </div>
+
+        <!-- Dots -->
+        <div class="why-dots">
+            <span class="why-dot wd-1"></span>
+            <span class="why-dot wd-2"></span>
+            <span class="why-dot wd-3"></span>
+        </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════
+              WHO WE ARE SECTION
+        ══════════════════════════════════════════ -->
+
+    <section class="who-section">
+        <!-- Dashed line top -->
+        <div class="who-dashed-top"></div>
+
+        <!-- Heading -->
+        <h2 class="who-heading">Who we are</h2>
+
+        <div class="who-inner">
+
+            <!-- LEFT: character illustration -->
+            <div class="who-left">
+                <svg viewBox="0 0 300 370" width="280" xmlns="http://www.w3.org/2000/svg">
+
+                    <!-- Speech bubble with logo -->
+                    <ellipse cx="120" cy="60" rx="52" ry="38" fill="#fff" stroke="#E2E0F0" stroke-width="2" />
+                    <!-- Bubble tail -->
+                    <path d="M100 95 Q95 112 82 118 Q100 110 115 98" fill="#fff" stroke="#E2E0F0" stroke-width="1.5" />
+                    <!-- Logo C inside bubble -->
+                    <path d="M140 48 Q128 38 114 46 Q108 52 112 60 Q118 70 130 68" stroke="#FF4D1C" stroke-width="3.5"
+                        stroke-linecap="round" fill="none" />
+                    <circle cx="140" cy="48" r="4" fill="#7C3AED" />
+                    <circle cx="130" cy="68" r="4" fill="#14B8A6" />
+
+                    <!-- Body: sitting cross-legged person -->
+                    <!-- Head -->
+                    <circle cx="148" cy="148" r="34" fill="#FBBF9A" />
+                    <!-- Hair bun -->
+                    <ellipse cx="148" cy="116" rx="18" ry="14" fill="#1a1a1a" />
+                    <circle cx="162" cy="110" r="8" fill="#1a1a1a" />
+                    <!-- Glasses -->
+                    <rect x="130" y="148" width="16" height="11" rx="5" fill="none" stroke="#1a1a1a" stroke-width="2" />
+                    <rect x="152" y="148" width="16" height="11" rx="5" fill="none" stroke="#1a1a1a" stroke-width="2" />
+                    <line x1="146" y1="153" x2="152" y2="153" stroke="#1a1a1a" stroke-width="1.8" />
+                    <!-- Nose -->
+                    <path d="M148 157 Q151 162 148 165" stroke="#c8845a" stroke-width="1.5" fill="none"
+                        stroke-linecap="round" />
+                    <!-- Smile -->
+                    <path d="M140 168 Q148 175 156 168" stroke="#c8845a" stroke-width="1.8" fill="none"
+                        stroke-linecap="round" />
+                    <!-- Ear -->
+                    <ellipse cx="114" cy="156" rx="7" ry="9" fill="#FBBF9A" />
+                    <!-- Ear detail -->
+                    <path d="M116 151 Q112 156 116 161" stroke="#c8845a" stroke-width="1.2" fill="none" />
+
+                    <!-- Hoodie body — orange/yellow -->
+                    <path
+                        d="M108 182 Q100 200 98 240 Q96 270 110 280 L186 280 Q200 270 198 240 Q196 200 188 182 Q170 175 148 174 Q126 175 108 182Z"
+                        fill="#FBBF24" />
+                    <!-- Hoodie pocket -->
+                    <rect x="128" y="230" width="40" height="28" rx="6" fill="#E8A000" opacity="0.5" />
+                    <!-- Hoodie front seam -->
+                    <line x1="148" y1="182" x2="148" y2="260" stroke="#E8A000" stroke-width="1.5" opacity="0.6" />
+
+                    <!-- Left arm holding finger up -->
+                    <path d="M108 195 Q85 188 74 170 Q70 160 78 158" stroke="#FBBF24" stroke-width="18"
+                        stroke-linecap="round" fill="none" />
+                    <!-- Pointing finger -->
+                    <path d="M78 158 Q72 145 76 136" stroke="#FBBF9A" stroke-width="10" stroke-linecap="round"
+                        fill="none" />
+                    <!-- Finger tip -->
+                    <ellipse cx="76" cy="132" rx="6" ry="8" fill="#FBBF9A" />
+
+                    <!-- Right arm holding book -->
+                    <path d="M188 195 Q208 190 215 200 Q218 212 210 220" stroke="#FBBF24" stroke-width="16"
+                        stroke-linecap="round" fill="none" />
+                    <!-- Hand -->
+                    <ellipse cx="208" cy="225" rx="12" ry="10" fill="#FBBF9A" />
+
+                    <!-- Book -->
+                    <rect x="192" y="218" width="52" height="38" rx="4" fill="#3B82F6" />
+                    <rect x="192" y="218" width="5" height="38" rx="2" fill="#1D4ED8" />
+                    <!-- Book pages lines -->
+                    <line x1="202" y1="226" x2="238" y2="226" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" />
+                    <line x1="202" y1="232" x2="238" y2="232" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" />
+                    <line x1="202" y1="238" x2="238" y2="238" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" />
+                    <line x1="202" y1="244" x2="220" y2="244" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" />
+
+                    <!-- Crossed legs sitting -->
+                    <!-- Left leg -->
+                    <path d="M110 278 Q100 300 80 318 Q70 325 85 330 Q100 332 115 318 Q128 304 138 290"
+                        fill="#1a1a1a" />
+                    <!-- Right leg -->
+                    <path d="M186 278 Q196 300 214 316 Q224 324 212 330 Q196 334 182 320 Q168 306 158 290"
+                        fill="#1a1a1a" />
+                    <!-- Lap overlap -->
+                    <ellipse cx="148" cy="300" rx="48" ry="22" fill="#1a1a1a" />
+                    <!-- Left shoe -->
+                    <ellipse cx="82" cy="332" rx="22" ry="10" fill="#1a1a1a" />
+                    <!-- Right shoe -->
+                    <ellipse cx="214" cy="332" rx="22" ry="10" fill="#1a1a1a" />
+
+                    <!-- Shoe highlights -->
+                    <path d="M65 328 Q75 322 90 324" stroke="#444" stroke-width="2" stroke-linecap="round"
+                        fill="none" />
+                    <path d="M197 328 Q207 322 222 324" stroke="#444" stroke-width="2" stroke-linecap="round"
+                        fill="none" />
+                </svg>
+            </div>
+
+            <!-- RIGHT: video card + scroll down -->
+            <div class="who-right">
+                <div class="video-card">
+                    <!-- Dark background -->
+                    <div class="video-thumb"></div>
+
+                    <!-- Abstract background shapes inside video -->
+                    <svg style="position:absolute;inset:0;width:100%;height:100%;" viewBox="0 0 540 340"
+                        preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Soft teal blur circle -->
+                        <circle cx="420" cy="80" r="130" fill="rgba(20,184,166,0.08)" />
+                        <circle cx="80" cy="280" r="100" fill="rgba(124,58,237,0.07)" />
+                        <!-- Subtle geometric outlines -->
+                        <circle cx="420" cy="80" r="80" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1" />
+                        <circle cx="420" cy="80" r="50" fill="rgba(255,255,255,0.03)" />
+                    </svg>
+
+                    <!-- Person silhouette area (left side blur/gradient) -->
+                    <div class="video-person">
+                        <svg viewBox="0 0 300 340" width="100%" height="100%" preserveAspectRatio="xMidYMax meet"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <!-- Simplified person shape in dark tones -->
+                            <!-- Head -->
+                            <circle cx="150" cy="80" r="52" fill="#2a3a52" />
+                            <!-- Shoulders / body in suit -->
+                            <path d="M60 340 Q65 220 80 200 Q110 180 150 178 Q190 180 220 200 Q235 220 240 340Z"
+                                fill="#1e2d42" />
+                            <!-- Suit lapels -->
+                            <path d="M150 178 L130 230 L150 220 L170 230 L150 178" fill="#253448" />
+                            <!-- Tie -->
+                            <path d="M150 200 L145 250 L150 260 L155 250 L150 200" fill="#FF4D1C" opacity="0.7" />
+                            <!-- Face details -->
+                            <ellipse cx="150" cy="82" rx="30" ry="32" fill="#8B7355" />
+                            <!-- subtle gradient overlay on left for depth -->
+                            <defs>
+                                <linearGradient id="personFade" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" stop-color="#0F172A" stop-opacity="0" />
+                                    <stop offset="100%" stop-color="#0F172A" stop-opacity="0.6" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="300" height="340" fill="url(#personFade)" />
+                        </svg>
+                    </div>
+
+                    <!-- Video text overlay (right side) -->
+                    <div class="video-text-overlay">
+                        <p class="video-tag">Strategies for</p>
+                        <p class="video-title-sm">Digital Transformation of</p>
+                        <p class="video-title-lg">BUSINESS</p>
+                        <div class="video-author">
+                            <p class="video-author-name">Creative Advs Team</p>
+                            <p class="video-author-role">CEO of Creative Advs</p>
+                        </div>
+                    </div>
+
+                    <!-- Logo watermark -->
+                    <div class="video-logo-mark">
+                        <svg width="28" height="28" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M34 10 Q20 2 8 14 Q2 21 8 30 Q16 40 30 36" stroke="#FF4D1C" stroke-width="4"
+                                stroke-linecap="round" fill="none" />
+                            <circle cx="34" cy="10" r="3.5" fill="#7C3AED" />
+                            <circle cx="30" cy="36" r="3.5" fill="#14B8A6" />
+                        </svg>
+                        <div>
+                            <div class="vl1">Creative Advs</div>
+                            <div class="vl2">Digital Mktg</div>
+                        </div>
+                    </div>
+
+                    <!-- Play button -->
+                    <div class="play-btn">
+                        <svg viewBox="0 0 24 24">
+                            <polygon points="5,3 19,12 5,21" />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Scroll down -->
+                <div class="scroll-down-wrap">
+                    <a href="#" class="scroll-down-link">Scroll Down</a>
+                    <div class="who-dashed-bottom"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════
+              RESULTS SECTION
+        ══════════════════════════════════════════ -->
+
+    <section class="results-section">
+        <div class="results-inner">
+
+            <!-- THREE STATS -->
+            <div class="results-stats">
+
+                <div class="stat-block">
+                    <h3>100%<br>Unique<br>Development</h3>
+                    <p class="stat-tag">(Design &amp; Branding)</p>
+                </div>
+
+                <div class="stat-block">
+                    <h3>Low<br>Bounce<br>Rate</h3>
+                    <p class="stat-sub">Digital strategy built on UX principles means a campaign that will meet your
+                        goals.</p>
+                </div>
+
+                <div class="stat-block">
+                    <h3>High<br>Loading<br>Speed</h3>
+                    <p class="stat-sub">Increasing visual design &amp; user interaction</p>
+                </div>
+
+            </div>
+
+            <!-- CURVED ARROWS + SEO label -->
+            <div class="arrows-row">
+                <svg class="arrows-svg" width="520" height="108" viewBox="0 0 520 108" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <!-- Left curve: from center-left up to "Low Bounce Rate" column -->
+                    <path d="M230 90 Q215 60 195 35 Q178 14 165 10" stroke="#9CA3AF" stroke-width="2"
+                        stroke-linecap="round" fill="none" />
+                    <!-- Arrowhead left -->
+                    <polygon points="158,6 170,8 164,18" fill="#334155" opacity="0.75" />
+
+                    <!-- Right curve: from center-right up to "High Loading Speed" column -->
+                    <path d="M295 90 Q310 62 330 38 Q348 18 362 10" stroke="#9CA3AF" stroke-width="2"
+                        stroke-linecap="round" fill="none" />
+                    <!-- Arrowhead right -->
+                    <polygon points="368,6 356,10 362,20" fill="#334155" opacity="0.75" />
+
+                    <!-- SEO Squash shape — red pill/blob in centre -->
+                    <ellipse cx="262" cy="90" rx="36" ry="15" fill="var(--accent)" opacity="0.92"
+                        transform="rotate(-8 262 90)" />
+                    <ellipse cx="248" cy="94" rx="14" ry="12" fill="var(--accent)" opacity="0.75"
+                        transform="rotate(-15 248 94)" />
+                </svg>
+
+                <!-- Label over the blob -->
+                <div class="seo-label">
+                    Equal to Better<br>SEO Squash
+                </div>
+            </div>
+
+            <!-- BOTTOM TAGLINE -->
+            <div class="results-tagline">
+                <h2>Here are the results of our principles, that our customers get and experience.</h2>
+                <p>Work with us because you need great-looking digital marketing that performs.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════
+              PROCESS SECTION
+        ══════════════════════════════════════════ -->
+
+    <section class="process-section" id="process">
+
+        <!-- Rotated vertical label -->
+        <div class="process-vertical-label">
+            <span class="pvl-our">OUR</span>
+            <span class="pvl-process">PROCESS</span>
+        </div>
+
+        <div class="process-content">
+
+            <!-- ── BLOB SHAPES ── -->
+            <div class="blob-wrap">
+                <svg width="100%" height="100%" viewBox="0 0 1000 640" preserveAspectRatio="xMidYMid meet"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <!-- Top green blob -->
+                    <ellipse cx="480" cy="140" rx="310" ry="160" fill="rgba(134,239,172,0.22)"
+                        transform="rotate(-12 480 140)" />
+                    <!-- Middle right peach/coral blob -->
+                    <ellipse cx="680" cy="330" rx="270" ry="150" fill="rgba(255,186,130,0.2)"
+                        transform="rotate(8 680 330)" />
+                    <!-- Bottom blue/purple blob -->
+                    <ellipse cx="430" cy="500" rx="290" ry="140" fill="rgba(167,139,250,0.18)"
+                        transform="rotate(-6 430 500)" />
+                </svg>
+            </div>
+
+            <!-- ── CONNECTOR ARROWS ── -->
+            <!-- Meet → Plan -->
+            <svg class="connector-svg" style="top:60px;left:290px;" width="220" height="90" viewBox="0 0 220 90">
+                <path d="M10 20 Q80 10 160 60 Q180 72 200 80" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round"
+                    fill="none" />
+                <polygon points="194,72 206,80 196,88" fill="#6B7280" opacity="0.8" />
+            </svg>
+
+            <!-- Plan → Web Design -->
+            <svg class="connector-svg" style="top:155px;right:60px;" width="60" height="120" viewBox="0 0 60 120">
+                <path d="M30 5 Q50 50 38 110" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round" fill="none" />
+                <polygon points="30,114 38,102 44,112" fill="#6B7280" opacity="0.8" />
+            </svg>
+
+            <!-- Web Design → Testing (curves left) -->
+            <svg class="connector-svg" style="top:330px;left:38%;" width="220" height="80" viewBox="0 0 220 80">
+                <path d="M210 10 Q130 5 60 50 Q30 65 10 70" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round"
+                    fill="none" />
+                <polygon points="4,62 14,68 8,78" fill="#6B7280" opacity="0.8" />
+            </svg>
+
+            <!-- Testing → Launch -->
+            <svg class="connector-svg" style="bottom:120px;left:190px;" width="180" height="100" viewBox="0 0 180 100">
+                <path d="M160 10 Q100 20 50 60 Q20 78 10 90" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round"
+                    fill="none" />
+                <polygon points="4,82 14,88 8,98" fill="#6B7280" opacity="0.8" />
+            </svg>
+
+            <!-- ── STEP 1: Meet ── -->
+            <div class="ps-meet step-item">
+                <div class="step-icon">
+                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Two coffee mugs doodle -->
+                        <!-- Mug left -->
+                        <rect x="6" y="24" width="20" height="22" rx="3" fill="none" stroke="#334155"
+                            stroke-width="2" />
+                        <path d="M26 29 Q34 29 34 36 Q34 43 26 43" stroke="#334155" stroke-width="2" fill="none"
+                            stroke-linecap="round" />
+                        <line x1="6" y1="40" x2="26" y2="40" stroke="#334155" stroke-width="1.5" />
+                        <!-- Steam left -->
+                        <path d="M12 20 Q14 14 12 8" stroke="#FF4D1C" stroke-width="1.8" stroke-linecap="round"
+                            fill="none" />
+                        <path d="M18 20 Q20 13 18 7" stroke="#FF4D1C" stroke-width="1.8" stroke-linecap="round"
+                            fill="none" />
+                        <!-- Mug right -->
+                        <rect x="38" y="28" width="18" height="20" rx="3" fill="none" stroke="#334155"
+                            stroke-width="2" />
+                        <path d="M56 33 Q62 33 62 38 Q62 43 56 43" stroke="#334155" stroke-width="2" fill="none"
+                            stroke-linecap="round" />
+                        <line x1="38" y1="42" x2="56" y2="42" stroke="#334155" stroke-width="1.5" />
+                        <!-- Steam right -->
+                        <path d="M44 24 Q46 18 44 13" stroke="#7C3AED" stroke-width="1.8" stroke-linecap="round"
+                            fill="none" />
+                        <path d="M50 24 Q52 17 50 12" stroke="#7C3AED" stroke-width="1.8" stroke-linecap="round"
+                            fill="none" />
+                    </svg>
+                </div>
+                <div class="step-body">
+                    <h4>Meet</h4>
+                    <p>The first step is to discover more about you, your company's vision, and to build a strong
+                        relationship. This is where we create your brand, create a custom strategy, and set project
+                        goals.</p>
+                </div>
+            </div>
+
+            <!-- ── STEP 2: Plan ── -->
+            <div class="ps-plan step-item">
+                <div class="step-icon">
+                    <svg width="68" height="56" viewBox="0 0 68 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Planning board / wireframe doodle -->
+                        <rect x="2" y="2" width="64" height="42" rx="4" fill="none" stroke="#334155" stroke-width="2" />
+                        <!-- Screen sections -->
+                        <rect x="8" y="8" width="24" height="14" rx="2" fill="none" stroke="#7C3AED"
+                            stroke-width="1.5" />
+                        <rect x="36" y="8" width="22" height="14" rx="2" fill="none" stroke="#334155"
+                            stroke-width="1.5" />
+                        <rect x="8" y="26" width="50" height="12" rx="2" fill="none" stroke="#334155"
+                            stroke-width="1.5" />
+                        <!-- PLAN text -->
+                        <text x="10" y="20" font-family="Caveat, cursive" font-size="10" fill="#7C3AED"
+                            font-weight="700">PLAN</text>
+                        <!-- Arrow lines on wireframe -->
+                        <line x1="38" y1="14" x2="56" y2="14" stroke="#FF4D1C" stroke-width="1.5" />
+                        <line x1="38" y1="18" x2="52" y2="18" stroke="#FF4D1C" stroke-width="1.2" />
+                        <!-- Stand -->
+                        <line x1="34" y1="44" x2="34" y2="52" stroke="#334155" stroke-width="2" />
+                        <line x1="22" y1="52" x2="46" y2="52" stroke="#334155" stroke-width="2"
+                            stroke-linecap="round" />
+                    </svg>
+                </div>
+                <div class="step-body">
+                    <h4>Plan</h4>
+                    <p>We will outline your requirements whether it may be a campaign, E-Commerce strategy, Mobile
+                        Application, or Lead Generation services.</p>
+                </div>
+            </div>
+
+            <!-- ── STEP 3: Web Design & Dev ── -->
+            <div class="ps-webdesign step-item">
+                <div class="step-icon">
+                    <svg width="68" height="56" viewBox="0 0 68 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Monitor doodle -->
+                        <rect x="2" y="2" width="54" height="38" rx="4" fill="none" stroke="#334155" stroke-width="2" />
+                        <rect x="8" y="8" width="42" height="26" rx="2" fill="none" stroke="#14B8A6"
+                            stroke-width="1.5" />
+                        <!-- Screen content lines -->
+                        <line x1="10" y1="14" x2="34" y2="14" stroke="#CBD5E1" stroke-width="1.5" />
+                        <line x1="10" y1="19" x2="28" y2="19" stroke="#CBD5E1" stroke-width="1.5" />
+                        <rect x="10" y="23" width="12" height="8" rx="1" fill="#14B8A6" opacity="0.4" />
+                        <rect x="26" y="23" width="18" height="8" rx="1" fill="#7C3AED" opacity="0.3" />
+                        <!-- Stand -->
+                        <line x1="29" y1="40" x2="29" y2="48" stroke="#334155" stroke-width="2" />
+                        <line x1="18" y1="48" x2="40" y2="48" stroke="#334155" stroke-width="2"
+                            stroke-linecap="round" />
+                        <!-- Mouse -->
+                        <rect x="58" y="28" width="8" height="12" rx="4" fill="none" stroke="#334155"
+                            stroke-width="1.5" />
+                        <line x1="62" y1="28" x2="62" y2="34" stroke="#334155" stroke-width="1" />
+                    </svg>
+                </div>
+                <div class="step-body">
+                    <h4>Web Design &amp; Dev</h4>
+                    <p>Once the outline is finished, visual concepts of the custom project will be created. Our creative
+                        and dev team reviews and revises the materials until it aligns with your web design goals.</p>
+                </div>
+            </div>
+
+            <!-- ── STEP 4: Testing ── -->
+            <div class="ps-testing step-item">
+                <div class="step-icon">
+                    <svg width="68" height="56" viewBox="0 0 68 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Multi-device testing doodle -->
+                        <!-- Desktop small -->
+                        <rect x="2" y="8" width="34" height="24" rx="3" fill="none" stroke="#334155" stroke-width="2" />
+                        <rect x="6" y="12" width="26" height="16" rx="1" fill="none" stroke="#FF4D1C"
+                            stroke-width="1.2" />
+                        <line x1="19" y1="32" x2="19" y2="38" stroke="#334155" stroke-width="1.5" />
+                        <line x1="12" y1="38" x2="26" y2="38" stroke="#334155" stroke-width="2"
+                            stroke-linecap="round" />
+                        <!-- Phone -->
+                        <rect x="40" y="4" width="20" height="36" rx="4" fill="none" stroke="#334155"
+                            stroke-width="2" />
+                        <rect x="43" y="8" width="14" height="24" rx="1" fill="none" stroke="#7C3AED"
+                            stroke-width="1.2" />
+                        <circle cx="50" cy="36" r="2" fill="#334155" />
+                        <!-- Checkmark -->
+                        <path d="M8 18 L14 24 L26 14" stroke="#14B8A6" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" fill="none" />
+                        <!-- Tablet bottom -->
+                        <rect x="2" y="42" width="58" height="12" rx="3" fill="none" stroke="#334155"
+                            stroke-width="1.5" />
+                        <line x1="28" y1="48" x2="34" y2="48" stroke="#FBBF24" stroke-width="2"
+                            stroke-linecap="round" />
+                    </svg>
+                </div>
+                <div class="step-body">
+                    <h4>Testing</h4>
+                    <p>Here review and testing takes place, which ensures the quality of your project. This is the most
+                        valuable step in the process, because your reputation is our reputation!</p>
+                </div>
+            </div>
+
+            <!-- ── WHO IS BEHIND (centre illustration) ── -->
+            <div class="ps-who">
+                <svg width="130" height="120" viewBox="0 0 130 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Person working at laptop from behind -->
+                    <!-- Chair -->
+                    <rect x="50" y="88" width="30" height="6" rx="3" fill="#CBD5E1" stroke="#475569"
+                        stroke-width="1.5" />
+                    <line x1="65" y1="94" x2="65" y2="112" stroke="#475569" stroke-width="2" stroke-linecap="round" />
+                    <line x1="48" y1="112" x2="82" y2="112" stroke="#475569" stroke-width="2.5"
+                        stroke-linecap="round" />
+                    <line x1="52" y1="112" x2="48" y2="120" stroke="#475569" stroke-width="2" stroke-linecap="round" />
+                    <line x1="78" y1="112" x2="82" y2="120" stroke="#475569" stroke-width="2" stroke-linecap="round" />
+                    <!-- Body sitting -->
+                    <path d="M48 88 Q50 65 65 62 Q80 65 82 88" fill="#FBBF24" stroke="#E8A000" stroke-width="1.5" />
+                    <!-- Head from behind -->
+                    <circle cx="65" cy="50" r="18" fill="#8B7355" stroke="#6B5A3E" stroke-width="1.5" />
+                    <!-- Hair -->
+                    <path d="M47 48 Q48 32 65 30 Q82 32 83 48" fill="#1a1a1a" stroke="none" />
+                    <!-- Laptop on desk -->
+                    <rect x="20" y="74" width="90" height="4" rx="2" fill="#CBD5E1" stroke="#475569" stroke-width="1" />
+                    <rect x="28" y="44" width="74" height="32" rx="4" fill="#1E293B" stroke="#334155"
+                        stroke-width="1.5" />
+                    <rect x="32" y="48" width="66" height="24" rx="2" fill="#fff" opacity="0.9" />
+                    <!-- Screen glow lines -->
+                    <line x1="36" y1="54" x2="70" y2="54" stroke="#14B8A6" stroke-width="1.2" opacity="0.6" />
+                    <line x1="36" y1="58" x2="60" y2="58" stroke="#7C3AED" stroke-width="1.2" opacity="0.5" />
+                    <line x1="36" y1="62" x2="65" y2="62" stroke="#FF4D1C" stroke-width="1.2" opacity="0.5" />
+                    <!-- Coffee mug on desk -->
+                    <rect x="6" y="68" width="14" height="10" rx="2" fill="none" stroke="#334155" stroke-width="1.5" />
+                    <path d="M20 71 Q24 71 24 74 Q24 77 20 77" stroke="#334155" stroke-width="1.5" fill="none" />
+                    <path d="M10 66 Q11 62 10 58" stroke="#FF4D1C" stroke-width="1.2" stroke-linecap="round"
+                        fill="none" />
+                    <path d="M14 66 Q15 61 14 57" stroke="#FF4D1C" stroke-width="1.2" stroke-linecap="round"
+                        fill="none" />
+                </svg>
+                <p class="ps-who-label">Who is behind the work?</p>
+                <a href="#" class="ps-who-link">Explore Here</a>
+            </div>
+
+            <!-- ── STEP 5: Launch ── -->
+            <div class="ps-launch step-item">
+                <div class="step-icon">
+                    <svg width="64" height="70" viewBox="0 0 64 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Rocket doodle -->
+                        <!-- Body -->
+                        <path d="M32 6 Q44 16 46 36 L32 48 L18 36 Q20 16 32 6Z" fill="none" stroke="#334155"
+                            stroke-width="2" stroke-linejoin="round" />
+                        <!-- Window -->
+                        <circle cx="32" cy="26" r="8" fill="none" stroke="#7C3AED" stroke-width="2" />
+                        <circle cx="32" cy="26" r="4" fill="#7C3AED" opacity="0.4" />
+                        <!-- Left fin -->
+                        <path d="M18 36 L8 46 L18 44" fill="none" stroke="#FF4D1C" stroke-width="2"
+                            stroke-linejoin="round" />
+                        <!-- Right fin -->
+                        <path d="M46 36 L56 46 L46 44" fill="none" stroke="#FF4D1C" stroke-width="2"
+                            stroke-linejoin="round" />
+                        <!-- Flame -->
+                        <path d="M26 48 Q28 58 32 62 Q36 58 38 48" fill="none" stroke="#FBBF24" stroke-width="2"
+                            stroke-linecap="round" />
+                        <path d="M29 50 Q30 56 32 58 Q34 56 35 50" fill="#FF4D1C" opacity="0.5" />
+                        <!-- Stars -->
+                        <circle cx="6" cy="16" r="2" fill="#FBBF24" />
+                        <circle cx="58" cy="20" r="2" fill="#FBBF24" />
+                        <circle cx="10" cy="36" r="1.5" fill="#7C3AED" opacity="0.6" />
+                        <circle cx="55" cy="10" r="1.5" fill="#14B8A6" opacity="0.7" />
+                    </svg>
+                </div>
+                <div class="step-body">
+                    <h4>Launch</h4>
+                    <p>Here is where we present your custom digital marketing project. Upon approval, your project will
+                        be launched and promoted. Then sit back and watch the momentum!</p>
+                </div>
+            </div>
+
+        </div><!-- /process-content -->
+    </section>
+
+
+<!-- ══════════════════════════════════════════
+          WHAT WE DO SECTION — UPDATED SERVICES
+    ══════════════════════════════════════════ -->
+
+<section class="what-section">
+    <!-- Red corner block -->
+    <div class="what-red-corner"></div>
+
+    <!-- Yellow right bar -->
+    <div class="what-yellow-bar"></div>
+
+    <!-- Rotated "What" label -->
+    <div class="what-vertical-label">What</div>
+    <div class="what-sub-label">we do</div>
+
+    <!-- 11-service grid -->
+    <div class="what-grid">
+
+        <!-- 1. Search Engine Optimization -->
+        <div class="svc-item">
+            <div class="svc-icon-box">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="15" cy="15" r="10" fill="none" stroke="#FF4D1C" stroke-width="1.8"/>
+                    <line x1="22" y1="22" x2="32" y2="32" stroke="#FF4D1C" stroke-width="2.5" stroke-linecap="round"/>
+                    <line x1="10" y1="12" x2="19" y2="12" stroke="#FF4D1C" stroke-width="1.3"/>
+                    <line x1="10" y1="15" x2="16" y2="15" stroke="#FF4D1C" stroke-width="1.3"/>
+                    <line x1="10" y1="18" x2="18" y2="18" stroke="#FF4D1C" stroke-width="1.3"/>
+                </svg>
+            </div>
+            <span class="svc-name">Search Engine Optimization</span>
+        </div>
+
+        <!-- 2. Performance Advertising -->
+        <div class="svc-item">
+            <div class="svc-icon-box">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Bar chart rising -->
+                    <rect x="4"  y="22" width="6" height="10" rx="1" fill="none" stroke="#FF4D1C" stroke-width="1.6"/>
+                    <rect x="13" y="15" width="6" height="17" rx="1" fill="none" stroke="#FF4D1C" stroke-width="1.6"/>
+                    <rect x="22" y="8"  width="6" height="24" rx="1" fill="#FF4D1C" opacity="0.2" stroke="#FF4D1C" stroke-width="1.6"/>
+                    <line x1="3" y1="34" x2="33" y2="34" stroke="#334155" stroke-width="1.4"/>
+                    <!-- Trend arrow -->
+                    <polyline points="5,24 14,17 23,10" fill="none" stroke="#FBBF24" stroke-width="2" stroke-linecap="round"/>
+                    <polygon points="23,6 28,10 23,14" fill="#FBBF24" opacity="0.85"/>
+                </svg>
+            </div>
+            <span class="svc-name">Performance Advertising</span>
+        </div>
+
+        <!-- 3. Social Media Marketing -->
+        <div class="svc-item">
+            <div class="svc-icon-box">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Network nodes -->
+                    <circle cx="18" cy="8"  r="5" fill="none" stroke="#FF4D1C" stroke-width="1.8"/>
+                    <circle cx="6"  cy="28" r="5" fill="none" stroke="#FF4D1C" stroke-width="1.8"/>
+                    <circle cx="30" cy="28" r="5" fill="none" stroke="#FF4D1C" stroke-width="1.8"/>
+                    <line x1="13" y1="11" x2="9"  y2="24" stroke="#FF4D1C" stroke-width="1.5"/>
+                    <line x1="23" y1="11" x2="27" y2="24" stroke="#FF4D1C" stroke-width="1.5"/>
+                    <line x1="11" y1="28" x2="25" y2="28" stroke="#FF4D1C" stroke-width="1.5"/>
+                    <!-- Centre dot -->
+                    <circle cx="18" cy="8" r="2" fill="#FF4D1C" opacity="0.5"/>
+                </svg>
+            </div>
+            <span class="svc-name">Social Media Marketing</span>
+        </div>
+
+        <!-- 4. Content Marketing -->
+        <div class="svc-item">
+            <div class="svc-icon-box">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="4" y="4" width="28" height="28" rx="3" fill="none" stroke="#FF4D1C" stroke-width="1.8"/>
+                    <line x1="8"  y1="11" x2="28" y2="11" stroke="#FF4D1C" stroke-width="1.4"/>
+                    <line x1="8"  y1="16" x2="22" y2="16" stroke="#FF4D1C" stroke-width="1.4"/>
+                    <line x1="8"  y1="21" x2="25" y2="21" stroke="#FF4D1C" stroke-width="1.4"/>
+                    <line x1="8"  y1="26" x2="18" y2="26" stroke="#FF4D1C" stroke-width="1.4"/>
+                    <!-- Pencil overlay -->
+                    <rect x="22" y="20" width="6" height="12" rx="1" fill="none" stroke="#7C3AED"
+                          stroke-width="1.2" transform="rotate(-35 22 20)"/>
+                    <polygon points="19,30 21,34 24,31" fill="#7C3AED" opacity="0.7" transform="rotate(-35 22 20)"/>
+                </svg>
+            </div>
+            <span class="svc-name">Content Marketing</span>
+        </div>
+
+        <!-- 5. Video Production & Marketing -->
+        <div class="svc-item">
+            <div class="svc-icon-box">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="3" y="8" width="22" height="18" rx="3" fill="none" stroke="#FF4D1C" stroke-width="1.8"/>
+                    <!-- Play triangle -->
+                    <polygon points="10,13 10,23 20,18" fill="#FF4D1C" opacity="0.25" stroke="#FF4D1C" stroke-width="1.4" stroke-linejoin="round"/>
+                    <!-- Camera panel -->
+                    <path d="M25 13 L33 10 L33 24 L25 22" fill="none" stroke="#7C3AED" stroke-width="1.6" stroke-linejoin="round"/>
+                    <circle cx="29" cy="17" r="2" fill="#7C3AED" opacity="0.45"/>
+                    <!-- Film strip dots bottom -->
+                    <circle cx="7"  cy="30" r="1.5" fill="#FF4D1C" opacity="0.5"/>
+                    <circle cx="12" cy="30" r="1.5" fill="#FF4D1C" opacity="0.5"/>
+                    <circle cx="17" cy="30" r="1.5" fill="#FF4D1C" opacity="0.5"/>
+                </svg>
+            </div>
+            <span class="svc-name">Video Production &amp; Marketing</span>
+        </div>
+
+        <!-- 6. Brand Identity & Design -->
+        <div class="svc-item">
+            <div class="svc-icon-box">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Shield -->
+                    <path d="M18 4 L30 9 L30 20 Q30 28 18 33 Q6 28 6 20 L6 9 Z"
+                          fill="none" stroke="#FF4D1C" stroke-width="1.8" stroke-linejoin="round"/>
+                    <!-- Star -->
+                    <polygon points="18,11 20,16 25,16 21,19 23,24 18,21 13,24 15,19 11,16 16,16"
+                             fill="none" stroke="#FBBF24" stroke-width="1.2" stroke-linejoin="round"/>
+                    <polygon points="18,13 19.5,17 23,17 20,19.5 21.5,23 18,21 14.5,23 16,19.5 13,17 16.5,17"
+                             fill="#FBBF24" opacity="0.4"/>
+                </svg>
+            </div>
+            <span class="svc-name">Brand Identity &amp; Design</span>
+        </div>
+
+        <!-- 7. OTA Management -->
+        <div class="svc-item">
+            <div class="svc-icon-box">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Globe / OTA -->
+                    <circle cx="18" cy="18" r="13" fill="none" stroke="#FF4D1C" stroke-width="1.8"/>
+                    <!-- Latitude lines -->
+                    <ellipse cx="18" cy="18" rx="7" ry="13" fill="none" stroke="#FF4D1C" stroke-width="1.2"/>
+                    <line x1="5"  y1="18" x2="31" y2="18" stroke="#FF4D1C" stroke-width="1.2"/>
+                    <line x1="7"  y1="11" x2="29" y2="11" stroke="#FF4D1C" stroke-width="1" opacity="0.5"/>
+                    <line x1="7"  y1="25" x2="29" y2="25" stroke="#FF4D1C" stroke-width="1" opacity="0.5"/>
+                    <!-- Location pin overlay -->
+                    <circle cx="18" cy="14" r="2.5" fill="#FF4D1C" opacity="0.8"/>
+                    <path d="M18 16.5 Q15 20 18 23" stroke="#FF4D1C" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+                </svg>
+            </div>
+            <span class="svc-name">OTA Management</span>
+        </div>
+
+        <!-- 8. Website Development -->
+        <div class="svc-item">
+            <div class="svc-icon-box">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Monitor -->
+                    <rect x="3" y="4" width="30" height="22" rx="3" fill="none" stroke="#FF4D1C" stroke-width="1.8"/>
+                    <rect x="7" y="8" width="22" height="14" rx="1" fill="none" stroke="#14B8A6" stroke-width="1.3"/>
+                    <!-- Code brackets -->
+                    <path d="M10 14 L7 16 L10 18" stroke="#FF4D1C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                    <path d="M18 14 L21 16 L18 18" stroke="#FF4D1C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                    <line x1="12" y1="19" x2="16" y2="12" stroke="#7C3AED" stroke-width="1.3" stroke-linecap="round"/>
+                    <!-- Stand -->
+                    <line x1="18" y1="26" x2="18" y2="31" stroke="#334155" stroke-width="1.8"/>
+                    <line x1="12" y1="31" x2="24" y2="31" stroke="#334155" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <span class="svc-name">Website Development</span>
+        </div>
+
+        <!-- 9. E-commerce Seller Support -->
+        <div class="svc-item">
+            <div class="svc-icon-box">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Shopping bag -->
+                    <path d="M8 12 L6 32 L30 32 L28 12 Z" fill="none" stroke="#FF4D1C" stroke-width="1.8" stroke-linejoin="round"/>
+                    <!-- Handle -->
+                    <path d="M13 12 Q13 6 18 6 Q23 6 23 12" fill="none" stroke="#FF4D1C" stroke-width="1.8" stroke-linecap="round"/>
+                    <!-- Check / tick inside bag -->
+                    <path d="M12 22 L16 26 L24 18" stroke="#14B8A6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                    <!-- Price tag -->
+                    <circle cx="28" cy="8" r="4" fill="#FBBF24" opacity="0.85"/>
+                    <text x="26" y="11" font-family="Poppins" font-size="6" fill="#fff" font-weight="700">$</text>
+                </svg>
+            </div>
+            <span class="svc-name">E-commerce Seller Support</span>
+        </div>
+
+        <!-- 10. Personal Branding -->
+        <div class="svc-item">
+            <div class="svc-icon-box">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Person silhouette -->
+                    <circle cx="18" cy="11" r="6" fill="none" stroke="#FF4D1C" stroke-width="1.8"/>
+                    <path d="M6 32 Q7 22 18 21 Q29 22 30 32" fill="none" stroke="#FF4D1C" stroke-width="1.8" stroke-linecap="round"/>
+                    <!-- Crown / branding mark -->
+                    <path d="M11 7 L14 3 L18 6 L22 3 L25 7" fill="none" stroke="#FBBF24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    <!-- Sparkle -->
+                    <circle cx="28" cy="14" r="2" fill="#7C3AED" opacity="0.7"/>
+                    <line x1="28" y1="10" x2="28" y2="12" stroke="#7C3AED" stroke-width="1.5" stroke-linecap="round"/>
+                    <line x1="28" y1="16" x2="28" y2="18" stroke="#7C3AED" stroke-width="1.5" stroke-linecap="round"/>
+                    <line x1="24" y1="14" x2="26" y2="14" stroke="#7C3AED" stroke-width="1.5" stroke-linecap="round"/>
+                    <line x1="30" y1="14" x2="32" y2="14" stroke="#7C3AED" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <span class="svc-name">Personal Branding</span>
+        </div>
+
+        <!-- 11. Product Photoshoot -->
+        <div class="svc-item">
+            <div class="svc-icon-box">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Camera body -->
+                    <rect x="3" y="10" width="30" height="22" rx="4" fill="none" stroke="#FF4D1C" stroke-width="1.8"/>
+                    <!-- Lens -->
+                    <circle cx="18" cy="21" r="7" fill="none" stroke="#FF4D1C" stroke-width="1.6"/>
+                    <circle cx="18" cy="21" r="4" fill="none" stroke="#FF4D1C" stroke-width="1.2"/>
+                    <circle cx="18" cy="21" r="1.5" fill="#FF4D1C" opacity="0.5"/>
+                    <!-- Viewfinder bump -->
+                    <path d="M12 10 L12 7 Q12 5 14 5 L22 5 Q24 5 24 7 L24 10" fill="none" stroke="#FF4D1C" stroke-width="1.5" stroke-linejoin="round"/>
+                    <!-- Flash dot -->
+                    <circle cx="27" cy="15" r="2" fill="#FBBF24" opacity="0.85"/>
+                    <!-- Corner aperture lines -->
+                    <line x1="7"  y1="29" x2="11" y2="29" stroke="#14B8A6" stroke-width="1.3" stroke-linecap="round"/>
+                    <line x1="7"  y1="29" x2="7"  y2="25" stroke="#14B8A6" stroke-width="1.3" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <span class="svc-name">Product Photoshoot</span>
+        </div>
+
+    </div><!-- /what-grid -->
+</section>
+
+
+    <!-- ══════════════════════════════════════════
+              FOOTER SECTION
+        ══════════════════════════════════════════ -->
+
+    <!-- ════════ FOOTER ════════ -->
+    <footer class="footer-section">
+        <div class="footer-inner">
+            <div>
+                <a href="#" class="footer-logo-wrap">
+                     <img src="/assets/logo.png" alt="logo" class="logo-img" width="68" height="78">
+                    <div class="footer-logo-text">
+                        <span class="fl1">Creative Advs</span>
+                        <span class="fl2">Digital Marketing</span>
+                    </div>
+                </a>
+                <div class="footer-map">
+                    <iframe
+                        src="https://www.google.com/maps?q=43%20%26%2044%2C%20VN%20Industrial%20Estate%2C%20Playworkz%20Coworking%20Space%2C%20West%2C%20Peelamedu%2C%20Bharathi%20Colony%2C%20Coimbatore%2C%20Tamil%20Nadu%20641004&output=embed"
+                        allowfullscreen loading="lazy">
+                    </iframe>
+
+                    <a href="https://www.google.com/maps?q=43%20%26%2044%2C%20VN%20Industrial%20Estate%2C%20Playworkz%20Coworking%20Space%2C%20West%2C%20Peelamedu%2C%20Bharathi%20Colony%2C%20Coimbatore%2C%20Tamil%20Nadu%20641004"
+                        target="_blank" class="map-badge">
+
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="#1a73e8">
+                            <path
+                                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                        </svg>
+
+                        Open in Maps
+                    </a>
+                </div>
+                <div class="footer-support-card">
+                    <div>
+                        <p class="support-label">Talk to our support</p>
+                        <p class="support-number">+91 9487882058</p>
+                    </div>
+                    <div class="support-icon">
+                        <svg viewBox="0 0 24 24" fill="#fff">
+                            <path
+                                d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-col-links">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="/service/service.html">Services</a></li>
+                    <li><a href="/team/team.html">Team</a></li>
+                    <li><a href="/about/about.html">About Us</a></li>
+                    <li><a href="/blog/blog.html">Blog</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-links">
+                <h5>Departments</h5>
+                <ul>
+                    <li><a href="#">Marketing Team</a></li>
+                    <li><a href="#">Design Studio</a></li>
+                    <li><a href="#">SEO & Content</a></li>
+                    <li><a href="#">Development</a></li>
+                    <li><a href="#">Open Roles</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-contact">
+                <h5>Get in Touch</h5>
+                <div class="contact-office">
+                    <div class="contact-office-title"><span>🇮🇳</span><span>INDIA – Head Office</span></div>
+                    <div class="contact-detail">
+                        <svg viewBox="0 0 24 24" fill="#94A3B8">
+                            <path
+                                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                        </svg>
+                        <span>
+                            43 & 44, VN Industrial Estate, Playworkz Coworking Space, West, Peelamedu, Bharathi
+                            Colony, Coimbatore, Tamil Nadu 641004.
+                        </span>
+                    </div>
+                    <div class="contact-detail">
+                        <svg viewBox="0 0 24 24" fill="#FF4D1C">
+                            <path
+                                d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" />
+                        </svg>
+                        <span><span class="hl">HR:</span> <a href="tel:+917397645521">+91 7397645521</a></span>
+                    </div>
+                    <div class="contact-detail">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#FF4D1C" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
+                        </svg>
+                        <a href="mailto:sales@creativeadvs.in">sales@creativeadvs.in</a>
+                    </div>
+                </div>
+               <a href="https://wa.me/917397645521?text=Hi%20Creative%20Advs!%20I'm%20interested%20in%20your%20digital%20marketing%20services.%20Can%20we%20chat?" 
+                    class="footer-cta-btn" 
+                    target="_blank">
+                Get in Touch
+                </a>
+            </div>
+        </div>
+        <div class="footer-social-row">
+            <div class="footer-socials-list">
+                <a href="https://in.linkedin.com/company/creative-advs-private-limited" class="footer-soc" target="_blank">in</a>
+                <a href="https://www.facebook.com/profile.php?id=100077503988653" class="footer-soc" target="_blank">fb</a>
+                <a href="https://www.instagram.com/creativeadvs/" class="footer-soc" target="_blank">ig</a>
+                <a href="https://www.youtube.com/@creativeadvs4626" class="footer-soc" target="_blank">yt</a>
+            </div>
+            <p class="footer-tagline">Crafting brands that <strong>stand out</strong> &amp; campaigns that
+                <strong>convert.</strong>
+            </p>
+        </div>
+        <div class="footer-copyright">
+            Copyright © 2026 <a href="#">Creative Advs</a>. All Rights Reserved. &nbsp;|&nbsp;
+            <a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Terms of Service</a>
+        </div>
+    </footer>
+
+
+    <div id="quoteModal" class="modal-overlay">
+    <div class="modal-content">
+        <button class="close-modal" onclick="closeQuoteModal()">&times;</button>
+        
+        <div class="modal-header">
+            <h3>Ready to Scale?</h3>
+            <p>Fill out the form below and our strategy team will reach out within 24 hours.</p>
+        </div>
+
+        <form class="quote-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Arjun K." required>
+                </div>
+                <div class="form-group">
+                    <label>Work Email</label>
+                    <input type="email" placeholder="name@company.com" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Service Interested In</label>
+                <select>
+                    <option>Web Development</option>
+                    <option>E-commerce Strategy</option>
+                    <option>Graphic Design</option>
+                    <option>Video Editing</option>
+                    <option>Performance Marketing</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Project Details</label>
+                <textarea rows="4" placeholder="Tell us a bit about your goals..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-quote-btn">Get My Free Proposal</button>
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+
+</html>

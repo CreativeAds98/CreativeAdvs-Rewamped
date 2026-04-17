@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog — Creative Advs | Digital Marketing Insights</title>
+<link rel="icon" type="image/png" href="/assets/logo.png">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="blogstyle.css">
+</head>
+<body>
+
+<!--<div class="get-quote">Get Quote</div>-->
+
+<div class="float-btns">
+  <a href="tel:+919876543210" class="float-btn float-phone">
+    <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+  </a>
+  <a href="https://wa.me/919876543210" class="float-btn float-whatsapp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a9.359 9.359 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487z"/></svg>
+  </a>
+</div>
+
+<!-- NAVBAR -->
+  <!-- NAVBAR -->
+<nav>
+    <a href="/index.html" class="logo-wrap">
+        <img src="/assets/logo.png" alt="logo" class="logo-img" width="48" height="48">
+        <div class="logo-text-block">
+            <span class="l1">Creative Advs</span>
+            <span class="l2">Digital Marketing</span>
+        </div>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="/service/service.html">Services</a></li>
+        <li><a href="/service/service.html#pricing">Subcription</a></li>
+        <li><a href="/about/about.html">About Us</a></li>
+        <li><a href="/blog/blog.html">Blog</a></li>
+        <li><a href="/team/team.html">Team</a></li>
+        <li><a href="/career/career.html">Careers</a></li>
+        <li><a href="/about/about.html#whyus">Why Choose Us</a></li>
+        <li><a href="/contact/contact.html">Contact</a></li> 
+    </ul>
+
+    <div class="nav-actions">
+        <a href="tel:+919876543210" class="btn-pill hide-mobile">Call Us</a>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+</nav>
+
+<!-- ══════════════════════════════════════════
+     PASTE THIS BLOCK RIGHT AFTER </nav> in index.html
+     ══════════════════════════════════════════ -->
+
+<!-- MOBILE OVERLAY (backdrop) -->
+<div class="mobile-overlay" id="mobileOverlay"></div>
+
+<!-- MOBILE DRAWER (slides in from right) -->
+<div class="mobile-drawer" id="mobileDrawer" role="dialog" aria-label="Navigation menu">
+
+  <!-- Header -->
+  <div class="drawer-header">
+    <a href="/index.html" class="drawer-logo">
+      <img src="/assets/logo.png" alt="Creative Advs logo" width="36" height="36">
+      <div class="drawer-logo-text">
+        <span class="dl1">Creative Advs</span>
+        <span class="dl2">Digital Marketing</span>
+      </div>
+    </a>
+    <button class="drawer-close" id="drawerClose" aria-label="Close menu">
+      <svg viewBox="0 0 24 24">
+        <line x1="18" y1="6" x2="6" y2="18"/>
+        <line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Nav links -->
+  <nav class="drawer-nav" aria-label="Mobile navigation">
+    <div class="drawer-section-label">Navigation</div>
+    <a href="/service/service.html">Services <span class="dn-arrow">›</span></a>
+    <a href="/portfolio/portfolio.html">Work <span class="dn-arrow">›</span></a>
+    <a href="/about/about.html">About Us <span class="dn-arrow">›</span></a>
+    <a href="/blog/blog.html">Blog <span class="dn-arrow">›</span></a>
+    <div class="drawer-divider"></div>
+    <div class="drawer-section-label">More</div>
+    <a href="/team/team.html">Team <span class="dn-arrow">›</span></a>
+    <a href="/career/career.html">Careers <span class="dn-arrow">›</span></a>
+    <a href="/testimonial/testimonial.html">Testimonials <span class="dn-arrow">›</span></a>
+    <a href="/contact/contact.html">Contact <span class="dn-arrow">›</span></a>
+  </nav>
+
+  <!-- CTA buttons -->
+  <div class="drawer-ctas">
+    <a href="/contact/contact.html" class="drawer-btn-primary">📞 Contact Us</a>
+    <a href="/contact/contact.html" class="drawer-btn-outline">Get a Free Quote</a>
+  </div>
+
+  <!-- Contact info -->
+  <div class="drawer-contact">
+    <a href="tel:+917397645521" class="drawer-contact-item">
+      <div class="dci-icon" style="background:rgba(41,165,155,0.1)">
+        <svg viewBox="0 0 24 24" fill="#29A59B">
+          <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/>
+        </svg>
+      </div>
+      +91 7397645521
+    </a>
+    <a href="mailto:sales@creativeadvs.in" class="drawer-contact-item">
+      <div class="dci-icon" style="background:rgba(124,58,237,0.1)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+          <polyline points="22,6 12,13 2,6"/>
+        </svg>
+      </div>
+      sales@creativeadvs.in
+    </a>
+  </div>
+
+  <!-- Social icons -->
+  <div class="drawer-social">
+    <a href="#" class="drawer-soc" aria-label="LinkedIn">in</a>
+    <a href="#" class="drawer-soc" aria-label="Facebook">fb</a>
+    <a href="#" class="drawer-soc" aria-label="Twitter">tw</a>
+    <a href="#" class="drawer-soc" aria-label="Instagram">ig</a>
+    <a href="#" class="drawer-soc" aria-label="YouTube">yt</a>
+  </div>
+
+</div>
+<!-- ══ END MOBILE DRAWER ══ -->
+
+<!-- ════ HERO ════ -->
+<section class="page-hero">
+  <div class="hero-inner">
+    <div class="hero-tag reveal">Insights & Ideas</div>
+    <h1 class="reveal rd1">Marketing That<br><em>Moves the Needle</em></h1>
+    <p class="reveal rd2">Strategy guides, campaign breakdowns, industry trends, and honest takes on what's actually working in digital marketing right now.</p>
+    <div class="hero-search reveal rd3">
+      <input type="text" placeholder="Search articles, topics, strategies...">
+      <button>Search</button>
+    </div>
+    <div class="breadcrumb reveal rd4">
+      <a href="creative-advs-replica.html">Home</a>
+      <span>›</span><span>Blog</span>
+    </div>
+  </div>
+</section>
+
+<!-- ════ CATEGORY TABS ════ -->
+<div class="cat-section">
+  <div class="cat-inner">
+    <div class="cat-tab active">All Posts <span class="cat-count">24</span></div>
+    <div class="cat-tab">SEO <span class="cat-count">8</span></div>
+    <div class="cat-tab">Paid Ads <span class="cat-count">5</span></div>
+    <div class="cat-tab">Social Media <span class="cat-count">6</span></div>
+    <div class="cat-tab">Content Strategy <span class="cat-count">4</span></div>
+    <div class="cat-tab">Brand <span class="cat-count">3</span></div>
+    <div class="cat-tab">Analytics <span class="cat-count">4</span></div>
+    <div class="cat-tab">Case Studies <span class="cat-count">3</span></div>
+  </div>
+</div>
+
+<!-- ════ MAIN BLOG CONTENT ════ -->
+<section class="blog-main">
+  <div class="blog-main-inner">
+
+    <!-- POSTS COLUMN -->
+    <div class="posts-col">
+
+      <!-- FEATURED POST -->
+      <div class="featured-post reveal">
+        <div class="fp-image">
+          <svg width="100%" height="100%" viewBox="0 0 400 360" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0">
+            <!-- Abstract SEO dashboard visual -->
+            <circle cx="200" cy="180" r="140" fill="rgba(255,77,28,0.06)"/>
+            <circle cx="200" cy="180" r="90" fill="rgba(255,77,28,0.05)"/>
+            <!-- Trend arrow up -->
+            <polyline points="60,280 100,240 140,220 180,190 220,160 260,130 300,95 340,70" fill="none" stroke="#FF4D1C" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+            <!-- Glow dot -->
+            <circle cx="340" cy="70" r="8" fill="#FF4D1C" opacity="0.8"/>
+            <circle cx="340" cy="70" r="18" fill="#FF4D1C" opacity="0.15"/>
+            <!-- Bar chart -->
+            <rect x="70" y="240" width="20" height="40" rx="4" fill="#FF4D1C" opacity="0.25"/>
+            <rect x="100" y="210" width="20" height="70" rx="4" fill="#FF4D1C" opacity="0.35"/>
+            <rect x="130" y="185" width="20" height="95" rx="4" fill="#FF4D1C" opacity="0.5"/>
+            <rect x="160" y="165" width="20" height="115" rx="4" fill="#FF4D1C" opacity="0.65"/>
+            <!-- Key labels -->
+            <text x="200" y="130" font-family="Caveat,cursive" font-size="22" fill="rgba(255,255,255,0.18)" font-weight="700" text-anchor="middle">SEO</text>
+            <text x="280" y="200" font-family="Caveat,cursive" font-size="18" fill="rgba(255,255,255,0.12)" font-weight="700">Rank #1</text>
+          </svg>
+          <div class="fp-badge">Featured</div>
+        </div>
+        <div class="fp-body">
+          <div class="fp-meta">
+            <span class="fp-cat">SEO Strategy</span>
+            <span class="fp-dot"></span>
+            <span class="fp-date">Jan 15, 2025</span>
+            <span class="fp-dot"></span>
+            <span class="fp-read">8 min read</span>
+          </div>
+          <h2>The Complete SEO Playbook for Indian D2C Brands in 2025</h2>
+          <p>Ranking on Google has never been more competitive — but it's also never been more rewarding for brands that get it right. We break down our exact SEO framework used to triple organic traffic for 12 clients in 2024.</p>
+          <div class="fp-author">
+            <div class="fp-avatar" style="background:linear-gradient(135deg,#FF4D1C,#FBBF24)">VR</div>
+            <div>
+              <div class="fp-author-name">Vikram Rajan</div>
+              <div class="fp-author-role">Chief Marketing Officer</div>
+            </div>
+            <a href="#" class="fp-read-btn">Read Article →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- POST GRID -->
+      <div class="post-grid">
+
+        <!-- Post 1 -->
+        <div class="post-card reveal">
+          <div class="post-thumb" style="background:linear-gradient(135deg,#F3EEFF,#E9DCFF)">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+              <rect x="10" y="20" width="60" height="40" rx="8" fill="none" stroke="#7C3AED" stroke-width="2"/>
+              <rect x="18" y="28" width="18" height="24" rx="3" fill="#7C3AED" opacity="0.2" stroke="#7C3AED" stroke-width="1.5"/>
+              <line x1="42" y1="32" x2="64" y2="32" stroke="#7C3AED" stroke-width="1.5"/>
+              <line x1="42" y1="38" x2="58" y2="38" stroke="#7C3AED" stroke-width="1.5"/>
+              <line x1="42" y1="44" x2="60" y2="44" stroke="#7C3AED" stroke-width="1.5"/>
+            </svg>
+            <div class="post-thumb-cat" style="background:rgba(124,58,237,0.12);color:#7C3AED">Paid Ads</div>
+          </div>
+          <div class="post-body">
+            <div class="post-meta">
+              <span class="post-date">Jan 10, 2025</span>
+              <span class="post-dot"></span>
+              <span class="post-read-time">6 min</span>
+            </div>
+            <h3>Why Your Meta Ads CPM Doubled — And What to Do About It</h3>
+            <p>CPMs on Meta are up 35% year-on-year. Here's the real reason why, and the three audience strategy shifts our paid team is using right now.</p>
+            <div class="post-footer">
+              <div class="post-author-mini">
+                <div class="post-av-mini" style="background:linear-gradient(135deg,#7C3AED,#A78BFA)">KP</div>
+                <span class="post-author-name">Karthik Prasad</span>
+              </div>
+              <div class="post-arrow">→</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Post 2 -->
+        <div class="post-card reveal rd1">
+          <div class="post-thumb" style="background:linear-gradient(135deg,#E8FBF8,#D0F5F0)">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+              <circle cx="40" cy="40" r="24" fill="none" stroke="#14B8A6" stroke-width="2"/>
+              <circle cx="40" cy="40" r="14" fill="none" stroke="#14B8A6" stroke-width="1.5" stroke-dasharray="4,3"/>
+              <circle cx="40" cy="40" r="5" fill="#14B8A6"/>
+              <line x1="40" y1="16" x2="40" y2="22" stroke="#14B8A6" stroke-width="2" stroke-linecap="round"/>
+              <line x1="58" y1="40" x2="64" y2="40" stroke="#14B8A6" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <div class="post-thumb-cat" style="background:rgba(20,184,166,0.12);color:#14B8A6">Social Media</div>
+          </div>
+          <div class="post-body">
+            <div class="post-meta">
+              <span class="post-date">Jan 5, 2025</span>
+              <span class="post-dot"></span>
+              <span class="post-read-time">5 min</span>
+            </div>
+            <h3>Instagram Algorithm 2025: What's Changed and How to Win</h3>
+            <p>Instagram's ranking signals shifted significantly in Q4 2024. We analysed 200 accounts to find what's driving reach — and it's not what most people think.</p>
+            <div class="post-footer">
+              <div class="post-author-mini">
+                <div class="post-av-mini" style="background:linear-gradient(135deg,#14B8A6,#0EA5E9)">NA</div>
+                <span class="post-author-name">Nandini Anand</span>
+              </div>
+              <div class="post-arrow">→</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Post 3 -->
+        <div class="post-card reveal rd2">
+          <div class="post-thumb" style="background:linear-gradient(135deg,#FFF1ED,#FFE4D9)">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+              <path d="M15 55 Q20 35 35 30 Q50 25 55 15" stroke="#FF4D1C" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+              <circle cx="55" cy="15" r="7" fill="#FF4D1C" opacity="0.3" stroke="#FF4D1C" stroke-width="2"/>
+              <rect x="15" y="55" width="12" height="16" rx="3" fill="#FF4D1C" opacity="0.3"/>
+              <rect x="33" y="42" width="12" height="29" rx="3" fill="#FF4D1C" opacity="0.5"/>
+              <rect x="51" y="30" width="12" height="41" rx="3" fill="#FF4D1C" opacity="0.7"/>
+            </svg>
+            <div class="post-thumb-cat" style="background:rgba(255,77,28,0.1);color:#FF4D1C">SEO</div>
+          </div>
+          <div class="post-body">
+            <div class="post-meta">
+              <span class="post-date">Dec 28, 2024</span>
+              <span class="post-dot"></span>
+              <span class="post-read-time">7 min</span>
+            </div>
+            <h3>Local SEO in India: How to Dominate Google Maps for Your City</h3>
+            <p>73% of consumers who search locally visit a business within 5km. Here's the exact process we use to rank clients in Google's local 3-pack.</p>
+            <div class="post-footer">
+              <div class="post-author-mini">
+                <div class="post-av-mini" style="background:linear-gradient(135deg,#14B8A6,#5EEAD4)">LK</div>
+                <span class="post-author-name">Lavanya Kumar</span>
+              </div>
+              <div class="post-arrow">→</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Post 4 -->
+        <div class="post-card reveal rd3">
+          <div class="post-thumb" style="background:linear-gradient(135deg,#FFFBEB,#FEF3C7)">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+              <rect x="12" y="25" width="56" height="35" rx="6" fill="none" stroke="#B45309" stroke-width="2"/>
+              <path d="M12 33 L40 48 L68 33" stroke="#B45309" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+              <rect x="20" y="55" width="10" height="8" rx="2" fill="#FBBF24" opacity="0.4"/>
+              <rect x="35" y="55" width="10" height="8" rx="2" fill="#FBBF24" opacity="0.4"/>
+              <rect x="50" y="55" width="10" height="8" rx="2" fill="#FBBF24" opacity="0.4"/>
+            </svg>
+            <div class="post-thumb-cat" style="background:rgba(251,191,36,0.15);color:#B45309">Content Strategy</div>
+          </div>
+          <div class="post-body">
+            <div class="post-meta">
+              <span class="post-date">Dec 20, 2024</span>
+              <span class="post-dot"></span>
+              <span class="post-read-time">9 min</span>
+            </div>
+            <h3>Email Marketing Is Not Dead — It's Just Misused. Here's the Fix.</h3>
+            <p>Our email campaigns average a 38% open rate and 6.4% CTR. We reveal the exact sequence structure, subject line formulas, and send-time data behind those numbers.</p>
+            <div class="post-footer">
+              <div class="post-author-mini">
+                <div class="post-av-mini" style="background:linear-gradient(135deg,#B45309,#FBBF24)">RI</div>
+                <span class="post-author-name">Riya Iyer</span>
+              </div>
+              <div class="post-arrow">→</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Post 5 -->
+        <div class="post-card reveal rd1">
+          <div class="post-thumb" style="background:linear-gradient(135deg,#EEF1F7,#E2E8F0)">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+              <polyline points="15,60 25,45 35,50 48,30 58,35 68,18" fill="none" stroke="#334155" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="68" cy="18" r="5" fill="#334155"/>
+              <line x1="15" y1="65" x2="68" y2="65" stroke="#CBD5E1" stroke-width="1.5"/>
+            </svg>
+            <div class="post-thumb-cat" style="background:rgba(51,65,85,0.08);color:#334155">Analytics</div>
+          </div>
+          <div class="post-body">
+            <div class="post-meta">
+              <span class="post-date">Dec 12, 2024</span>
+              <span class="post-dot"></span>
+              <span class="post-read-time">6 min</span>
+            </div>
+            <h3>GA4 vs Universal Analytics: The Metrics That Actually Matter for Marketers</h3>
+            <p>GA4 confused everyone at launch. 18 months in, here's our simplified breakdown of the 8 metrics you actually need to monitor in GA4 for digital marketing.</p>
+            <div class="post-footer">
+              <div class="post-author-mini">
+                <div class="post-av-mini" style="background:linear-gradient(135deg,#0F172A,#334155)">SB</div>
+                <span class="post-author-name">Snehal Bhatt</span>
+              </div>
+              <div class="post-arrow">→</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Post 6 -->
+        <div class="post-card reveal rd2">
+          <div class="post-thumb" style="background:linear-gradient(135deg,#F0E6FF,#E9DCFF)">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+              <path d="M40 12 L52 8 L52 20 L40 24 Z" fill="#7C3AED" opacity="0.4"/>
+              <path d="M40 12 L28 8 L28 20 L40 24 Z" fill="#7C3AED" opacity="0.25"/>
+              <path d="M40 24 L52 20 L52 56 L40 60 Z" fill="#7C3AED" opacity="0.3"/>
+              <path d="M40 24 L28 20 L28 56 L40 60 Z" fill="#7C3AED" opacity="0.2"/>
+              <path d="M40 60 L52 56 L60 64 L48 68 Z" fill="#7C3AED" opacity="0.5"/>
+              <path d="M40 60 L28 56 L20 64 L32 68 Z" fill="#7C3AED" opacity="0.35"/>
+            </svg>
+            <div class="post-thumb-cat" style="background:rgba(124,58,237,0.1);color:#7C3AED">Brand</div>
+          </div>
+          <div class="post-body">
+            <div class="post-meta">
+              <span class="post-date">Dec 5, 2024</span>
+              <span class="post-dot"></span>
+              <span class="post-read-time">10 min</span>
+            </div>
+            <h3>Brand Identity vs. Brand Personality: Why Most Startups Get Both Wrong</h3>
+            <p>A logo is not a brand. We explain the five-layer brand model we use with every new client — and why skipping any one layer costs you in the long run.</p>
+            <div class="post-footer">
+              <div class="post-author-mini">
+                <div class="post-av-mini" style="background:linear-gradient(135deg,#7C3AED,#A78BFA)">SM</div>
+                <span class="post-author-name">Suresh Mohan</span>
+              </div>
+              <div class="post-arrow">→</div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /post-grid -->
+
+      <div class="load-more-wrap reveal">
+        <button class="load-more-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          Load More Articles
+        </button>
+      </div>
+
+    </div><!-- /posts-col -->
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+
+      <!-- Search -->
+      <div class="sb-widget reveal">
+        <h4>Search</h4>
+        <div class="sb-search">
+          <input type="text" placeholder="Search articles...">
+          <button>
+            <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Popular Posts -->
+      <div class="sb-widget reveal rd1">
+        <h4>Popular Posts</h4>
+        <div class="popular-list">
+          <div class="popular-item">
+            <div class="popular-thumb" style="background:linear-gradient(135deg,#FFF1ED,#FFE4D9)">
+              <span class="popular-num">01</span>
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="10" fill="none" stroke="#FF4D1C" stroke-width="1.5"/><line x1="9" y1="12" x2="17" y2="12" stroke="#FF4D1C" stroke-width="1.2"/><line x1="9" y1="15" x2="14" y2="15" stroke="#FF4D1C" stroke-width="1.2"/></svg>
+            </div>
+            <div class="popular-body">
+              <div class="popular-title">The Complete SEO Playbook for Indian D2C Brands</div>
+              <div class="popular-meta">4.2k views · 8 min read</div>
+            </div>
+          </div>
+          <div class="popular-item">
+            <div class="popular-thumb" style="background:linear-gradient(135deg,#F3EEFF,#E9DCFF)">
+              <span class="popular-num">02</span>
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="5" y="8" width="18" height="14" rx="3" fill="none" stroke="#7C3AED" stroke-width="1.5"/><path d="M5 12 L14 18 L23 12" stroke="#7C3AED" stroke-width="1.2" fill="none"/></svg>
+            </div>
+            <div class="popular-body">
+              <div class="popular-title">Email Marketing Is Not Dead — It's Just Misused</div>
+              <div class="popular-meta">3.8k views · 9 min read</div>
+            </div>
+          </div>
+          <div class="popular-item">
+            <div class="popular-thumb" style="background:linear-gradient(135deg,#E8FBF8,#D0F5F0)">
+              <span class="popular-num">03</span>
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="10" fill="none" stroke="#14B8A6" stroke-width="1.5" stroke-dasharray="3,2"/><circle cx="14" cy="14" r="4" fill="#14B8A6" opacity="0.4"/></svg>
+            </div>
+            <div class="popular-body">
+              <div class="popular-title">Instagram Algorithm 2025: What's Changed</div>
+              <div class="popular-meta">3.1k views · 5 min read</div>
+            </div>
+          </div>
+          <div class="popular-item">
+            <div class="popular-thumb" style="background:linear-gradient(135deg,#FFFBEB,#FEF3C7)">
+              <span class="popular-num">04</span>
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><polyline points="5,22 10,15 16,18 22,8" fill="none" stroke="#B45309" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+            <div class="popular-body">
+              <div class="popular-title">GA4 vs Universal Analytics: Metrics That Matter</div>
+              <div class="popular-meta">2.7k views · 6 min read</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tags -->
+      <div class="sb-widget reveal rd2">
+        <h4>Popular Tags</h4>
+        <div class="tags-cloud">
+          <span class="tag-chip">SEO</span>
+          <span class="tag-chip">Google Ads</span>
+          <span class="tag-chip">Meta Ads</span>
+          <span class="tag-chip">Instagram</span>
+          <span class="tag-chip">Content</span>
+          <span class="tag-chip">Email</span>
+          <span class="tag-chip">Analytics</span>
+          <span class="tag-chip">D2C</span>
+          <span class="tag-chip">Branding</span>
+          <span class="tag-chip">LinkedIn</span>
+          <span class="tag-chip">Video</span>
+          <span class="tag-chip">ROAS</span>
+          <span class="tag-chip">Local SEO</span>
+          <span class="tag-chip">GA4</span>
+        </div>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="newsletter-widget reveal rd3">
+        <h4>Weekly Marketing Digest</h4>
+        <p>Get our best articles, case studies, and marketing insights delivered every Tuesday. 4,200+ subscribers.</p>
+        <input class="nl-input" type="email" placeholder="your@email.com">
+        <button class="nl-btn">Subscribe Free</button>
+        <p class="nl-note">No spam. Unsubscribe anytime.</p>
+      </div>
+
+      <!-- Social Follow -->
+      <div class="sb-widget reveal rd4">
+        <h4>Follow Us</h4>
+        <div class="social-follow-list">
+          <div class="sfl-item">
+            <div class="sfl-left">
+              <div class="sfl-icon" style="background:rgba(0,119,181,0.1)">
+                <svg viewBox="0 0 24 24" fill="#0077B5"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+              </div>
+              <div>
+                <div class="sfl-name">LinkedIn</div>
+                <div class="sfl-count">8.2k followers</div>
+              </div>
+            </div>
+            <span class="sfl-follow">Follow</span>
+          </div>
+          <div class="sfl-item">
+            <div class="sfl-left">
+              <div class="sfl-icon" style="background:rgba(225,48,108,0.1)">
+                <svg viewBox="0 0 24 24" fill="#E1306C"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5" fill="none" stroke="white" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5" fill="white"/></svg>
+              </div>
+              <div>
+                <div class="sfl-name">Instagram</div>
+                <div class="sfl-count">12.4k followers</div>
+              </div>
+            </div>
+            <span class="sfl-follow">Follow</span>
+          </div>
+          <div class="sfl-item">
+            <div class="sfl-left">
+              <div class="sfl-icon" style="background:rgba(255,0,0,0.08)">
+                <svg viewBox="0 0 24 24" fill="#FF0000"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75,15.02 15.5,12 9.75,8.98 9.75,15.02" fill="white"/></svg>
+              </div>
+              <div>
+                <div class="sfl-name">YouTube</div>
+                <div class="sfl-count">3.1k subscribers</div>
+              </div>
+            </div>
+            <span class="sfl-follow">Subscribe</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /sidebar -->
+
+  </div>
+</section>
+
+<!-- ════ TOPICS BAND ════ -->
+<section class="topics-band">
+  <div class="topics-inner">
+    <div class="topics-header">
+      <div class="section-tag reveal" style="justify-content:center">Browse by Topic</div>
+      <h2 class="section-h2 reveal rd1" style="text-align:center">Find What You're <em>Looking For</em></h2>
+    </div>
+    <div class="topics-grid">
+      <div class="topic-card reveal">
+        <div class="topic-icon" style="background:rgba(255,77,28,0.1)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#FF4D1C" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </div>
+        <h4>SEO & Search</h4>
+        <p class="topic-count">8 articles</p>
+      </div>
+      <div class="topic-card reveal rd1">
+        <div class="topic-icon" style="background:rgba(124,58,237,0.1)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <h4>Paid Advertising</h4>
+        <p class="topic-count">5 articles</p>
+      </div>
+      <div class="topic-card reveal rd2">
+        <div class="topic-icon" style="background:rgba(20,184,166,0.1)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#14B8A6" stroke-width="2"><path d="M22 4s-2.5 2-6 2-6-2-10-2a8.38 8.38 0 00-3 .56A8.38 8.38 0 002 4v18l.56-.56A8.38 8.38 0 016 21c3.5 0 5.5 2 10 2 2.5 0 4-.56 4-.56V4z"/></svg>
+        </div>
+        <h4>Social Media</h4>
+        <p class="topic-count">6 articles</p>
+      </div>
+      <div class="topic-card reveal rd3">
+        <div class="topic-icon" style="background:rgba(251,191,36,0.12)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#B45309" stroke-width="2"><path d="M12 20h9M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        </div>
+        <h4>Content Strategy</h4>
+        <p class="topic-count">4 articles</p>
+      </div>
+      <div class="topic-card reveal rd1">
+        <div class="topic-icon" style="background:rgba(255,77,28,0.08)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#FF4D1C" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <h4>Brand Identity</h4>
+        <p class="topic-count">3 articles</p>
+      </div>
+      <div class="topic-card reveal rd2">
+        <div class="topic-icon" style="background:rgba(15,23,42,0.07)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#334155" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <h4>Analytics</h4>
+        <p class="topic-count">4 articles</p>
+      </div>
+      <div class="topic-card reveal rd3">
+        <div class="topic-icon" style="background:rgba(20,184,166,0.1)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#14B8A6" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+        </div>
+        <h4>Case Studies</h4>
+        <p class="topic-count">3 articles</p>
+      </div>
+      <div class="topic-card reveal rd4">
+        <div class="topic-icon" style="background:rgba(124,58,237,0.1)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><polygon points="10,8 16,11 10,14"/></svg>
+        </div>
+        <h4>Video Marketing</h4>
+        <p class="topic-count">2 articles</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ NEWSLETTER ════ -->
+<section class="newsletter-section">
+  <h2 class="reveal">Get Smarter at Marketing<br>Every Tuesday</h2>
+  <p class="reveal rd1">Join 4,200+ marketers, founders, and brand managers who read our weekly digest. Practical insights, no fluff.</p>
+  <div class="nl-form reveal rd2">
+    <input type="email" placeholder="Enter your email address...">
+    <button>Subscribe Free</button>
+  </div>
+  <p class="nl-sub-note reveal rd3">No spam, ever. Unsubscribe with one click.</p>
+</section>
+
+<!-- ════ FOOTER ════ -->
+<footer class="footer-section">
+  <div class="footer-inner">
+    <div>
+        <a href="/index.html" class="footer-logo-wrap">
+        <img src="/assets/logo.png" alt="logo" class="logo-img" width="68" height="78">
+         <div class="footer-logo-text">
+            <span class="fl1">Creative Advs</span>
+            <span class="fl2">Digital Marketing</span>
+            </div>
+        </a>
+    <div class="footer-map">
+        <iframe
+              src="https://www.google.com/maps?q=43%20%26%2044%2C%20VN%20Industrial%20Estate%2C%20Playworkz%20Coworking%20Space%2C%20West%2C%20Peelamedu%2C%20Bharathi%20Colony%2C%20Coimbatore%2C%20Tamil%20Nadu%20641004&output=embed"
+              allowfullscreen loading="lazy">
+        </iframe>
+
+      <a href="https://www.google.com/maps?q=43%20%26%2044%2C%20VN%20Industrial%20Estate%2C%20Playworkz%20Coworking%20Space%2C%20West%2C%20Peelamedu%2C%20Bharathi%20Colony%2C%20Coimbatore%2C%20Tamil%20Nadu%20641004"
+         target="_blank" class="map-badge">
+
+             <svg width="12" height="12" viewBox="0 0 24 24" fill="#1a73e8">
+               <path
+              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+             </svg>
+
+              Open in Maps
+        </a>
+     </div>
+      <div class="footer-support-card">
+        <div>
+          <p class="support-label">Talk to our support</p>
+          <p class="support-number">+91 9487882058</p>
+        </div>
+        <div class="support-icon">
+          <svg viewBox="0 0 24 24" fill="#fff"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+        </div>
+      </div>
+    </div>
+    <div class="footer-col-links">
+      <h5>Quick Links</h5>
+      <ul>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer-col-links">
+      <h5>Blog Topics</h5>
+      <ul>
+        <li><a href="#">SEO & Search</a></li>
+        <li><a href="#">Paid Advertising</a></li>
+        <li><a href="#">Social Media</a></li>
+        <li><a href="#">Content Strategy</a></li>
+        <li><a href="#">Analytics</a></li>
+        <li><a href="#">Case Studies</a></li>
+      </ul>
+    </div>
+    <div class="footer-col-contact">
+      <h5>Contact Info</h5>
+      <div style="margin-bottom:1.5rem">
+        <div style="display:flex;align-items:center;gap:0.5rem;font-size:0.88rem;font-weight:700;color:var(--navy);margin-bottom:0.7rem;"><span>🇮🇳</span><span>India – Head Office</span></div>
+        <div class="f-contact-detail">
+          <svg viewBox="0 0 24 24" fill="#94A3B8"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        <span>43 & 44, VN Industrial Estate, Playworkz Coworking Space, West, Peelamedu, Bharathi
+             Colony, Coimbatore, Tamil Nadu 641004.</span>
+        </div>
+        <div class="f-contact-detail">
+          <svg viewBox="0 0 24 24" fill="#FF4D1C"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+          <span><span class="hl">HR:</span> <a href="tel:+917397645521">+91 7397645521</a></span>
+        </div>
+        <div class="f-contact-detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#FF4D1C" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:hello@creativeadvs.com">sales@creativeadvs.in</a>
+        </div>
+      </div>
+      <a href="/contact/contact.html" class="footer-cta-btn">Get in Touch</a>
+    </div>
+  </div>
+  <div class="footer-social-row">
+    <div class="footer-socials-list">
+      <a href="https://in.linkedin.com/company/creative-advs-private-limited" class="footer-soc" target="_blank">in</a>
+      <a href="https://www.facebook.com/profile.php?id=100077503988653" class="footer-soc" target="_blank">fb</a>
+      <a href="https://www.instagram.com/creativeadvs/" class="footer-soc" target="_blank">ig</a>
+      <a href="https://www.youtube.com/@creativeadvs4626" class="footer-soc" target="_blank">yt</a>
+    </div>
+    <p class="footer-tagline">Crafting brands that <strong>stand out</strong> &amp; campaigns that <strong>convert.</strong></p>
+  </div>
+  <div class="footer-copyright">
+    Copyright © 2026 <a href="#">Creative Advs</a>. All Rights Reserved. &nbsp;|&nbsp;
+    <a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Terms of Service</a>
+  </div>
+</footer>
+<script src="blogscript.js"></script>
+<script src="/script.js"></script>
+<style>
+  @keyframes spin { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }
+</style>
+</body>
+</html>

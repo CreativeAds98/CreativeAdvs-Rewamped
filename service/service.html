@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services — Creative Advs | Digital Marketing Agency</title>
+    <link rel="icon" type="image/png" href="/assets/logo.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="servicestyle.css">
+</head>
+
+<body>
+
+    <!-- Get Quote sidebar 
+    <div class="get-quote">Get Quote</div>-->
+
+
+    <!-- NAVBAR -->
+      <!-- NAVBAR -->
+<nav>
+    <a href="/index.html" class="logo-wrap">
+        <img src="/assets/logo.png" alt="logo" class="logo-img" width="48" height="48">
+        <div class="logo-text-block">
+            <span class="l1">Creative Advs</span>
+            <span class="l2">Digital Marketing</span>
+        </div>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="/">Services</a></li>
+        <li><a href="#pricing">Subscription</a></li>
+        <li><a href="/about/about.html">About Us</a></li>
+        <li><a href="/blog/blog.html">Blog</a></li>
+        <li><a href="/team/team.html">Team</a></li>
+        <li><a href="/career/career.html">Careers</a></li>
+        <li><a href="/about/about.html#whyus">Why Choose Us</a></li>
+        <li><a href="/contact/contact.html">Contact</a></li> 
+    </ul>
+
+    <div class="nav-actions">
+        <a href="tel:+919876543210" class="btn-pill hide-mobile">Call Us</a>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+</nav>
+
+<!-- ══════════════════════════════════════════
+     PASTE THIS BLOCK RIGHT AFTER </nav> in index.html
+     ══════════════════════════════════════════ -->
+
+<!-- MOBILE OVERLAY (backdrop) -->
+<div class="mobile-overlay" id="mobileOverlay"></div>
+
+<!-- MOBILE DRAWER (slides in from right) -->
+<div class="mobile-drawer" id="mobileDrawer" role="dialog" aria-label="Navigation menu">
+
+  <!-- Header -->
+  <div class="drawer-header">
+    <a href="/index.html" class="drawer-logo">
+      <img src="/assets/logo.png" alt="Creative Advs logo" width="36" height="36">
+      <div class="drawer-logo-text">
+        <span class="dl1">Creative Advs</span>
+        <span class="dl2">Digital Marketing</span>
+      </div>
+    </a>
+    <button class="drawer-close" id="drawerClose" aria-label="Close menu">
+      <svg viewBox="0 0 24 24">
+        <line x1="18" y1="6" x2="6" y2="18"/>
+        <line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Nav links -->
+  <nav class="drawer-nav" aria-label="Mobile navigation">
+    <div class="drawer-section-label">Navigation</div>
+    <a href="/service/service.html">Services <span class="dn-arrow">›</span></a>
+    <a href="/portfolio/portfolio.html">Work <span class="dn-arrow">›</span></a>
+    <a href="/about/about.html">About Us <span class="dn-arrow">›</span></a>
+    <a href="/blog/blog.html">Blog <span class="dn-arrow">›</span></a>
+    <div class="drawer-divider"></div>
+    <div class="drawer-section-label">More</div>
+    <a href="/team/team.html">Team <span class="dn-arrow">›</span></a>
+    <a href="/career/career.html">Careers <span class="dn-arrow">›</span></a>
+    <a href="/testimonial/testimonial.html">Testimonials <span class="dn-arrow">›</span></a>
+    <a href="/contact/contact.html">Contact <span class="dn-arrow">›</span></a>
+  </nav>
+
+  <!-- CTA buttons -->
+  <div class="drawer-ctas">
+    <a href="contact/contact.html" class="drawer-btn-primary">📞 Contact Us</a>
+    <a href="contact/contact.html" class="drawer-btn-outline">Get a Free Quote</a>
+  </div>
+
+  <!-- Contact info -->
+  <div class="drawer-contact">
+    <a href="tel:+917397645521" class="drawer-contact-item">
+      <div class="dci-icon" style="background:rgba(41,165,155,0.1)">
+        <svg viewBox="0 0 24 24" fill="#29A59B">
+          <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/>
+        </svg>
+      </div>
+      +91 7397645521
+    </a>
+    <a href="mailto:sales@creativeadvs.in" class="drawer-contact-item">
+      <div class="dci-icon" style="background:rgba(124,58,237,0.1)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+          <polyline points="22,6 12,13 2,6"/>
+        </svg>
+      </div>
+      sales@creativeadvs.in
+    </a>
+  </div>
+
+  <!-- Social icons -->
+  <div class="drawer-social">
+    <a href="#" class="drawer-soc" aria-label="LinkedIn">in</a>
+    <a href="#" class="drawer-soc" aria-label="Facebook">fb</a>
+    <a href="#" class="drawer-soc" aria-label="Twitter">tw</a>
+    <a href="#" class="drawer-soc" aria-label="Instagram">ig</a>
+    <a href="#" class="drawer-soc" aria-label="YouTube">yt</a>
+  </div>
+
+</div>
+<!-- ══ END MOBILE DRAWER ══ -->
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="hero-shape-1"></div>
+        <div class="hero-shape-2"></div>
+        <div class="hero-shape-3"></div>
+        <div class="page-hero-inner">
+            <div class="page-hero-tag reveal">What We Offer</div>
+            <h1 class="reveal reveal-delay-1">Our <em>Services</em><br>Built to Grow You</h1>
+            <p class="reveal reveal-delay-2">From search engine domination to viral social campaigns — every service we
+                offer is engineered to generate real, measurable results for your brand.</p>
+            <div class="breadcrumb reveal reveal-delay-3">
+                <a href="/index.html">Home</a>
+                <span class="breadcrumb-sep">›</span>
+                <span>Services</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES OVERVIEW GRID -->
+    <section class="services-overview">
+        <div class="services-overview-header">
+            <div class="section-tag reveal">All Services</div>
+            <h2 class="section-h2 reveal reveal-delay-1">Everything Your Brand <em>Needs</em></h2>
+            <p class="reveal reveal-delay-2">We're a full-stack digital marketing powerhouse. Pick one service or bundle
+                them all — we scale with you.</p>
+        </div>
+
+        <div class="services-main-grid">
+
+            <!-- 1 -->
+            <div class="svc-card reveal">
+                <div class="svc-card-num">01</div>
+                <div class="svc-card-icon-wrap">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <circle cx="12" cy="12" r="9" stroke="#FF4D1C" stroke-width="2" />
+                        <line x1="19" y1="19" x2="27" y2="27" stroke="#FF4D1C" stroke-width="2.5"
+                            stroke-linecap="round" />
+                        <line x1="7" y1="11" x2="15" y2="11" stroke="#FF4D1C" stroke-width="1.5" />
+                        <line x1="7" y1="14" x2="13" y2="14" stroke="#FF4D1C" stroke-width="1.5" />
+                    </svg>
+                </div>
+                <h3>Search Engine Optimization</h3>
+                <p>Climb to the top of Google and stay there. We build technical, on-page, and off-page SEO strategies
+                    that deliver lasting organic traffic growth.</p>
+                <div class="svc-card-tags">
+                    <span class="svc-tag">Technical SEO</span>
+                    <span class="svc-tag">Link Building</span>
+                    <span class="svc-tag">Local SEO</span>
+                </div>
+                <div class="svc-card-arrow">↗</div>
+            </div>
+
+            <!-- 2 -->
+            <div class="svc-card reveal reveal-delay-1">
+                <div class="svc-card-num">02</div>
+                <div class="svc-card-icon-wrap">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <rect x="2" y="5" width="24" height="16" rx="3" stroke="#7C3AED" stroke-width="2" />
+                        <rect x="5" y="8" width="10" height="10" rx="1" fill="#7C3AED" opacity="0.2" stroke="#7C3AED"
+                            stroke-width="1.2" />
+                        <line x1="18" y1="10" x2="24" y2="10" stroke="#7C3AED" stroke-width="1.5" />
+                        <line x1="18" y1="13" x2="22" y2="13" stroke="#7C3AED" stroke-width="1.5" />
+                        <line x1="11" y1="23" x2="17" y2="23" stroke="#334155" stroke-width="2"
+                            stroke-linecap="round" />
+                    </svg>
+                </div>
+                <h3>Performance Advertising</h3>
+                <p>ROI-obsessed paid campaigns across Google, Meta, LinkedIn, and more. Every rupee tracked, every ad
+                    optimised relentlessly for conversions.</p>
+                <div class="svc-card-tags">
+                    <span class="svc-tag">Google Ads</span>
+                    <span class="svc-tag">Meta Ads</span>
+                    <span class="svc-tag">LinkedIn Ads</span>
+                </div>
+                <div class="svc-card-arrow">↗</div>
+            </div>
+
+            <!-- 3 -->
+            <div class="svc-card reveal reveal-delay-2">
+                <div class="svc-card-num">03</div>
+                <div class="svc-card-icon-wrap">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <rect x="2" y="4" width="24" height="18" rx="3" stroke="#14B8A6" stroke-width="2" />
+                        <circle cx="8" cy="13" r="3" fill="#14B8A6" opacity="0.35" stroke="#14B8A6"
+                            stroke-width="1.2" />
+                        <circle cx="14" cy="9" r="3" fill="#14B8A6" opacity="0.35" stroke="#14B8A6"
+                            stroke-width="1.2" />
+                        <circle cx="20" cy="13" r="3" fill="#14B8A6" opacity="0.35" stroke="#14B8A6"
+                            stroke-width="1.2" />
+                        <line x1="10.5" y1="11.5" x2="11.5" y2="10.5" stroke="#14B8A6" stroke-width="1.2" />
+                        <line x1="16.5" y1="10.5" x2="17.5" y2="11.5" stroke="#14B8A6" stroke-width="1.2" />
+                    </svg>
+                </div>
+                <h3>Social Media Marketing</h3>
+                <p>Build an engaged audience and a loyal community. We create platform-native content, run influencer
+                    collabs, and manage your brand's full social presence.</p>
+                <div class="svc-card-tags">
+                    <span class="svc-tag">Instagram</span>
+                    <span class="svc-tag">LinkedIn</span>
+                    <span class="svc-tag">YouTube</span>
+                </div>
+                <div class="svc-card-arrow">↗</div>
+            </div>
+
+            <!-- 4 -->
+            <div class="svc-card reveal reveal-delay-1">
+                <div class="svc-card-num">04</div>
+                <div class="svc-card-icon-wrap">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <rect x="2" y="3" width="24" height="18" rx="3" stroke="#FF4D1C" stroke-width="2" />
+                        <line x1="6" y1="9" x2="22" y2="9" stroke="#FF4D1C" stroke-width="1.5" />
+                        <line x1="6" y1="13" x2="17" y2="13" stroke="#FF4D1C" stroke-width="1.5" />
+                        <line x1="6" y1="17" x2="19" y2="17" stroke="#FF4D1C" stroke-width="1.5" />
+                        <rect x="18" y="16" width="6" height="9" rx="1" fill="#7C3AED" opacity="0.2" stroke="#7C3AED"
+                            stroke-width="1.2" transform="rotate(-30 18 16)" />
+                    </svg>
+                </div>
+                <h3>Content Marketing</h3>
+                <p>Stories that sell. We produce high-value blog posts, case studies, video scripts, whitepapers, and
+                    social copy that builds authority and drives inbound.</p>
+                <div class="svc-card-tags">
+                    <span class="svc-tag">Blog Writing</span>
+                    <span class="svc-tag">Video Scripts</span>
+                    <span class="svc-tag">Copywriting</span>
+                </div>
+                <div class="svc-card-arrow">↗</div>
+            </div>
+
+            <!-- 5 -->
+            <div class="svc-card reveal reveal-delay-2">
+                <div class="svc-card-num">05</div>
+                <div class="svc-card-icon-wrap">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <rect x="2" y="6" width="20" height="14" rx="3" stroke="#FBBF24" stroke-width="2" />
+                        <rect x="6" y="9" width="12" height="8" rx="1" fill="#FBBF24" opacity="0.15" />
+                        <path d="M22 10 L27 8 L27 20 L22 18" fill="none" stroke="#FBBF24" stroke-width="1.8"
+                            stroke-linejoin="round" />
+                        <circle cx="16" cy="13" r="2.5" fill="#FF4D1C" opacity="0.5" />
+                    </svg>
+                </div>
+                <h3>Video Production &amp; Marketing</h3>
+                <p>Scroll-stopping video content from concept to delivery. Reels, explainers, brand films, testimonials
+                    — produced for platforms that matter to your audience.</p>
+                <div class="svc-card-tags">
+                    <span class="svc-tag">Reels</span>
+                    <span class="svc-tag">Brand Films</span>
+                    <span class="svc-tag">Explainers</span>
+                </div>
+                <div class="svc-card-arrow">↗</div>
+            </div>
+
+            <!-- 6 -->
+            <div class="svc-card reveal reveal-delay-3">
+                <div class="svc-card-num">06</div>
+                <div class="svc-card-icon-wrap">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <path d="M14 3 L24 8 L24 18 Q24 24 14 27 Q4 24 4 18 L4 8 Z" fill="none" stroke="#FF4D1C"
+                            stroke-width="2" stroke-linejoin="round" />
+                        <polygon points="14,10 16,15 21,15 17,18 18.5,23 14,20 9.5,23 11,18 7,15 12,15" fill="#FF4D1C"
+                            opacity="0.25" stroke="#FF4D1C" stroke-width="1" />
+                    </svg>
+                </div>
+                <h3>Brand Identity &amp; Design</h3>
+                <p>Logo, visual language, tone of voice, and brand guidelines. We build identities that are distinct,
+                    scalable, and unmistakably yours across every touchpoint.</p>
+                <div class="svc-card-tags">
+                    <span class="svc-tag">Logo Design</span>
+                    <span class="svc-tag">Brand Kit</span>
+                    <span class="svc-tag">Guidelines</span>
+                </div>
+                <div class="svc-card-arrow">↗</div>
+            </div>
+           
+            <!-- 7 -->
+            <div class="svc-card reveal reveal-delay-1">
+                <div class="svc-card-num">07</div>
+                <div class="svc-card-icon-wrap">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <rect x="3" y="4" width="22" height="20" rx="2" stroke="#7C3AED" stroke-width="2" />
+                        <line x1="3" y1="10" x2="25" y2="10" stroke="#7C3AED" stroke-width="2" />
+                        <path d="M8 14H10M14 14H20M8 18H10M14 18H17" stroke="#7C3AED" stroke-width="1.5" stroke-linecap="round"/>
+                        <circle cx="20" cy="6" r="1.5" fill="#FF4D1C" />
+                    </svg>
+                </div>
+                <h3>OTA Management</h3>
+                <p>Maximize your property's visibility across Booking.com, Airbnb, and Agoda. We handle dynamic pricing, inventory sync, and guest communication to boost your occupancy.</p>
+                <div class="svc-card-tags">
+                    <span class="svc-tag">Channel Sync</span>
+                    <span class="svc-tag">Revenue Mgmt</span>
+                    <span class="svc-tag">Review Boost</span>
+                </div>
+                <div class="svc-card-arrow">↗</div>
+            </div>
+            
+            <!-- 8 -->
+            <div class="svc-card reveal reveal-delay-2">
+                <div class="svc-card-num">08</div>
+                <div class="svc-card-icon-wrap">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <path d="M4 6L14 3L24 6V20L14 25L4 20V6Z" stroke="#14B8A6" stroke-width="2" />
+                        <path d="M9 12L12 15L19 8" stroke="#14B8A6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <rect x="8" y="18" width="12" height="2" fill="#14B8A6" opacity="0.3" />
+                    </svg>
+                </div>
+                <h3>Website Development</h3>
+                <p>High-performance, responsive websites built with modern stacks. From premium landing pages to complex corporate portals, we focus on speed, SEO, and glassmorphic aesthetics.</p>
+                <div class="svc-card-tags">
+                    <span class="svc-tag">React / Next.js</span>
+                    <span class="svc-tag">UI/UX Design</span>
+                    <span class="svc-tag">Cloud Hosting</span>
+                </div>
+                <div class="svc-card-arrow">↗</div>
+            </div>
+            
+            <!--9-->
+            <div class="svc-card reveal reveal-delay-3">
+                <div class="svc-card-num">09</div>
+                <div class="svc-card-icon-wrap">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <path d="M4 8H24L22 20H6L4 8Z" stroke="#FBBF24" stroke-width="2" />
+                        <path d="M10 8C10 5 12 3 14 3C16 3 18 5 18 8" stroke="#FBBF24" stroke-width="2" />
+                        <circle cx="14" cy="14" r="2" fill="#FF4D1C" opacity="0.6" />
+                    </svg>
+                </div>
+                <h3>E-commerce Seller Support</h3>
+                <p>Scale your business on Amazon, Flipkart, and Shopify. We manage product listings, A+ content, account health, and advertising to ensure your store stays profitable.</p>
+                <div class="svc-card-tags">
+                    <span class="svc-tag">Amazon/Flipkart</span>
+                    <span class="svc-tag">Listing Optimization</span>
+                    <span class="svc-tag">Seller Central</span>
+                </div>
+                <div class="svc-card-arrow">↗</div>
+            </div>
+
+            <!-- 10 --> 
+            <div class="svc-card reveal reveal-delay-1">
+                <div class="svc-card-num">10</div>
+                <div class="svc-card-icon-wrap">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <circle cx="14" cy="9" r="5" stroke="#FF4D1C" stroke-width="2" />
+                        <path d="M5 24C5 19 9 16 14 16C19 16 23 19 23 24" stroke="#FF4D1C" stroke-width="2" />
+                        <path d="M21 7L25 3" stroke="#7C3AED" stroke-width="1.5" />
+                        <circle cx="25" cy="3" r="1" fill="#7C3AED" />
+                    </svg>
+                </div>
+                <h3>Personal Branding</h3>
+                <p>Turn your name into a high-value asset. We help founders and professionals build authority on LinkedIn and beyond through strategic content and visual storytelling.</p>
+                <div class="svc-card-tags">
+                    <span class="svc-tag">LinkedIn Strategy</span>
+                    <span class="svc-tag">Thought Leadership</span>
+                    <span class="svc-tag">PR & Positioning</span>
+                </div>
+                <div class="svc-card-arrow">↗</div>
+            </div>
+ 
+            <!-- 11 -->
+            <div class="svc-card reveal reveal-delay-2">
+                <div class="svc-card-num">11</div>
+                <div class="svc-card-icon-wrap">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <rect x="3" y="6" width="22" height="16" rx="3" stroke="#14B8A6" stroke-width="2" />
+                        <circle cx="14" cy="14" r="4" stroke="#14B8A6" stroke-width="2" />
+                        <rect x="21" y="8" width="2" height="2" rx="1" fill="#FF4D1C" />
+                        <path d="M10 6L12 3H16L18 6" stroke="#14B8A6" stroke-width="2" />
+                    </svg>
+                </div>
+                <h3>Product Photoshoot</h3>
+                <p>Professional studio and lifestyle photography that makes your products pop. High-resolution imagery optimized for e-commerce, social media, and catalogs.</p>
+                <div class="svc-card-tags">
+                    <span class="svc-tag">White Background</span>
+                    <span class="svc-tag">Lifestyle Shots</span>
+                    <span class="svc-tag">Post-Processing</span>
+                </div>
+                <div class="svc-card-arrow">↗</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- STATS BAR -->
+    <div class="stats-bar">
+        <div class="stat-b reveal">
+            <div class="num">500+</div>
+            <div class="lbl">Campaigns Delivered</div>
+        </div>
+        <div class="stat-b reveal reveal-delay-1">
+            <div class="num">₹5Lakh+</div>
+            <div class="lbl">Ad Spend Managed</div>
+        </div>
+        <div class="stat-b reveal reveal-delay-2">
+            <div class="num">3.2×</div>
+            <div class="lbl">Average ROI</div>
+        </div>
+        <div class="stat-b reveal reveal-delay-3">
+            <div class="num">98%</div>
+            <div class="lbl">Client Retention</div>
+        </div>
+    </div>
+
+    <!-- DEEP DIVE 1: SEO -->
+    <section class="service-detail" id="seo">
+        <div class="service-detail-inner">
+            <div class="service-detail-visual reveal">
+                <svg width="100%" viewBox="0 0 440 380" xmlns="http://www.w3.org/2000/svg" style="padding:2rem;">
+                    <!-- SEO visual: search bar + ranking chart -->
+                    <rect x="40" y="30" width="360" height="56" rx="28" fill="#fff" stroke="#E2E0F0"
+                        stroke-width="1.5" />
+                    <circle cx="76" cy="58" r="18" fill="none" stroke="#FF4D1C" stroke-width="2.5" />
+                    <line x1="89" y1="71" x2="102" y2="84" stroke="#FF4D1C" stroke-width="3" stroke-linecap="round" />
+                    <rect x="110" y="46" width="200" height="24" rx="4" fill="#F8F7FF" />
+                    <text x="120" y="63" font-family="Poppins,sans-serif" font-size="13" fill="#94A3B8">creative advs
+                        digital...</text>
+                    <!-- ranking items -->
+                    <rect x="40" y="110" width="360" height="52" rx="8" fill="#fff" stroke="#FF4D1C"
+                        stroke-width="1.5" />
+                    <circle cx="64" cy="136" r="10" fill="#FF4D1C" opacity="0.15" />
+                    <text x="60" y="140" font-family="Poppins,sans-serif" font-size="11" fill="#FF4D1C"
+                        text-anchor="middle" font-weight="700">1</text>
+                    <rect x="84" y="126" width="140" height="8" rx="3" fill="#E2E0F0" />
+                    <rect x="84" y="140" width="100" height="6" rx="3" fill="#E8E4F0" />
+                    <rect x="40" y="172" width="360" height="50" rx="8" fill="#F8F7FF" stroke="#E2E0F0"
+                        stroke-width="1" />
+                    <rect x="40" y="232" width="360" height="50" rx="8" fill="#F8F7FF" stroke="#E2E0F0"
+                        stroke-width="1" />
+                    <!-- Bar chart below -->
+                    <rect x="60" y="320" width="40" height="30" rx="3" fill="#FF4D1C" opacity="0.3" />
+                    <rect x="115" y="305" width="40" height="45" rx="3" fill="#FF4D1C" opacity="0.5" />
+                    <rect x="170" y="285" width="40" height="65" rx="3" fill="#FF4D1C" opacity="0.7" />
+                    <rect x="225" y="265" width="40" height="85" rx="3" fill="#FF4D1C" opacity="0.85" />
+                    <rect x="280" y="248" width="40" height="102" rx="3" fill="#FF4D1C" />
+                    <text x="220" y="238" font-family="Caveat,cursive" font-size="16" fill="#FF4D1C" font-weight="700"
+                        text-anchor="middle">Organic Traffic ↑</text>
+                </svg>
+                <div class="sdv-accent-block" style="background:var(--accent);">
+                    <span class="sdv-num">3×</span>
+                    <span class="sdv-lbl">Traffic Growth</span>
+                </div>
+            </div>
+            <div class="service-detail-content reveal reveal-delay-2">
+                <div class="section-tag">Search Engine Optimization</div>
+                <h2 class="section-h2">Rank Higher.<br><em>Grow Faster.</em></h2>
+                <p>Our SEO approach combines rigorous technical audits, strategic content development, and
+                    authority-building link acquisition. We don't chase algorithms — we build the kind of web presence
+                    Google loves long-term.</p>
+                <ul class="features-list">
+                    <li>Full technical SEO audit &amp; fix implementation</li>
+                    <li>Keyword strategy &amp; competitor gap analysis</li>
+                    <li>On-page optimisation &amp; schema markup</li>
+                    <li>High-authority link building campaigns</li>
+                    <li>Local &amp; Google Business Profile optimisation</li>
+                    <li>Monthly performance reporting &amp; insights</li>
+                </ul>
+                <a href="#" class="btn-service">Get SEO Audit</a>
+                <a href="#" class="btn-service-outline">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEEP DIVE 2: Paid Ads -->
+    <section class="service-detail" id="ads">
+        <div class="service-detail-inner reverse">
+            <div class="service-detail-content reveal">
+                <div class="section-tag">Performance Advertising</div>
+                <h2 class="section-h2">Every Rupee.<br><em>Accounted For.</em></h2>
+                <p>We manage end-to-end paid campaigns with obsessive attention to attribution, audience segmentation,
+                    and creative testing. From awareness to conversion — we build funnels that print results.</p>
+                <ul class="features-list">
+                    <li>Google Search, Display &amp; Shopping campaigns</li>
+                    <li>Meta (Facebook &amp; Instagram) ad management</li>
+                    <li>LinkedIn B2B lead generation campaigns</li>
+                    <li>Programmatic &amp; retargeting ad strategies</li>
+                    <li>A/B creative testing &amp; landing page CRO</li>
+                    <li>Real-time dashboard &amp; ROAS tracking</li>
+                </ul>
+                <a href="#" class="btn-service">Start Advertising</a>
+                <a href="#" class="btn-service-outline">View Case Studies</a>
+            </div>
+            <div class="service-detail-visual reveal reveal-delay-2">
+                <svg width="100%" viewBox="0 0 440 380" xmlns="http://www.w3.org/2000/svg" style="padding:2rem;">
+                    <!-- Dashboard mockup -->
+                    <rect x="30" y="20" width="380" height="260" rx="12" fill="#0F172A" />
+                    <rect x="30" y="20" width="380" height="36" rx="12" fill="#1E293B" />
+                    <rect x="30" y="44" width="380" height="12" fill="#1E293B" />
+                    <circle cx="50" cy="38" r="5" fill="#FF4D1C" opacity="0.7" />
+                    <circle cx="66" cy="38" r="5" fill="#FBBF24" opacity="0.7" />
+                    <circle cx="82" cy="38" r="5" fill="#14B8A6" opacity="0.7" />
+                    <!-- Metric cards -->
+                    <rect x="44" y="64" width="80" height="50" rx="8" fill="#1E293B" />
+                    <text x="84" y="88" font-family="Nunito,sans-serif" font-size="18" fill="#FF4D1C" font-weight="900"
+                        text-anchor="middle">₹3.2x</text>
+                    <text x="84" y="103" font-family="Poppins,sans-serif" font-size="8" fill="rgba(255,255,255,0.4)"
+                        text-anchor="middle">ROAS</text>
+                    <rect x="136" y="64" width="80" height="50" rx="8" fill="#1E293B" />
+                    <text x="176" y="88" font-family="Nunito,sans-serif" font-size="18" fill="#14B8A6" font-weight="900"
+                        text-anchor="middle">42%</text>
+                    <text x="176" y="103" font-family="Poppins,sans-serif" font-size="8" fill="rgba(255,255,255,0.4)"
+                        text-anchor="middle">CTR ↑</text>
+                    <rect x="228" y="64" width="80" height="50" rx="8" fill="#1E293B" />
+                    <text x="268" y="88" font-family="Nunito,sans-serif" font-size="18" fill="#7C3AED" font-weight="900"
+                        text-anchor="middle">₹18</text>
+                    <text x="268" y="103" font-family="Poppins,sans-serif" font-size="8" fill="rgba(255,255,255,0.4)"
+                        text-anchor="middle">CPL</text>
+                    <rect x="320" y="64" width="76" height="50" rx="8" fill="#1E293B" />
+                    <text x="358" y="88" font-family="Nunito,sans-serif" font-size="18" fill="#FBBF24" font-weight="900"
+                        text-anchor="middle">98%</text>
+                    <text x="358" y="103" font-family="Poppins,sans-serif" font-size="8" fill="rgba(255,255,255,0.4)"
+                        text-anchor="middle">Quality</text>
+                    <!-- Area chart -->
+                    <polyline points="44,240 90,220 136,200 182,185 228,165 274,148 320,130 366,110 396,100" fill="none"
+                        stroke="#FF4D1C" stroke-width="2.5" stroke-linecap="round" />
+                    <polygon
+                        points="44,240 90,220 136,200 182,185 228,165 274,148 320,130 366,110 396,100 396,265 44,265"
+                        fill="#FF4D1C" opacity="0.08" />
+                    <line x1="44" y1="265" x2="396" y2="265" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+                </svg>
+                <div class="sdv-accent-block" style="background:var(--accent2);">
+                    <span class="sdv-num">40%</span>
+                    <span class="sdv-lbl">Lower CPL</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEEP DIVE 3: Social Media -->
+    <section class="service-detail" id="social">
+        <div class="service-detail-inner">
+            <div class="service-detail-visual reveal">
+                <svg width="100%" viewBox="0 0 440 380" xmlns="http://www.w3.org/2000/svg" style="padding:2rem;">
+                    <!-- Social media grid -->
+                    <!-- Post card 1 -->
+                    <rect x="30" y="20" width="180" height="160" rx="12" fill="#fff" stroke="#E2E0F0"
+                        stroke-width="1.5" />
+                    <rect x="30" y="20" width="180" height="100" rx="12" fill="#7C3AED" opacity="0.15" />
+                    <text x="120" y="78" font-family="Caveat,cursive" font-size="22" fill="#7C3AED" font-weight="700"
+                        text-anchor="middle">Creative.</text>
+                    <circle cx="50" cy="138" r="10" fill="#7C3AED" opacity="0.2" />
+                    <rect x="66" y="132" width="80" height="6" rx="3" fill="#E2E0F0" />
+                    <rect x="66" y="143" width="55" height="5" rx="3" fill="#E8E4F0" />
+                    <text x="190" y="165" font-family="Poppins,sans-serif" font-size="10" fill="#FF4D1C">❤ 2.4k</text>
+                    <!-- Post card 2 -->
+                    <rect x="230" y="20" width="180" height="160" rx="12" fill="#fff" stroke="#E2E0F0"
+                        stroke-width="1.5" />
+                    <rect x="230" y="20" width="180" height="100" rx="12" fill="#FF4D1C" opacity="0.12" />
+                    <text x="320" y="78" font-family="Caveat,cursive" font-size="22" fill="#FF4D1C" font-weight="700"
+                        text-anchor="middle">Grow Now.</text>
+                    <circle cx="250" cy="138" r="10" fill="#FF4D1C" opacity="0.2" />
+                    <rect x="266" y="132" width="80" height="6" rx="3" fill="#E2E0F0" />
+                    <text x="390" y="165" font-family="Poppins,sans-serif" font-size="10" fill="#7C3AED">▶ 8.1k</text>
+                    <!-- Engagement chart -->
+                    <rect x="30" y="200" width="380" height="160" rx="12" fill="#F8F7FF" stroke="#E2E0F0"
+                        stroke-width="1" />
+                    <text x="50" y="225" font-family="Poppins,sans-serif" font-size="10" fill="#94A3B8"
+                        font-weight="600" letter-spacing="1">ENGAGEMENT TREND</text>
+                    <polyline points="50,340 100,320 150,295 200,270 250,248 300,225 350,205 400,190" fill="none"
+                        stroke="#14B8A6" stroke-width="2.5" stroke-linecap="round" />
+                    <polyline points="50,340 100,330 150,315 200,300 250,288 300,272 350,258 400,244" fill="none"
+                        stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-dasharray="5,3" />
+                    <line x1="50" y1="345" x2="400" y2="345" stroke="#E2E0F0" stroke-width="1" />
+                </svg>
+                <div class="sdv-accent-block" style="background:var(--teal);">
+                    <span class="sdv-num">5×</span>
+                    <span class="sdv-lbl">Engagement</span>
+                </div>
+            </div>
+            <div class="service-detail-content reveal reveal-delay-2">
+                <div class="section-tag">Social Media Marketing</div>
+                <h2 class="section-h2">Build a Brand<br>People <em>Follow.</em></h2>
+                <p>We craft a complete social media presence — content calendar, creative production, community
+                    management, influencer outreach, and paid amplification — all aligned to your business goals.</p>
+                <ul class="features-list">
+                    <li>Monthly content calendar &amp; creative production</li>
+                    <li>Instagram, LinkedIn, YouTube &amp; X management</li>
+                    <li>Influencer identification &amp; campaign management</li>
+                    <li>Community management &amp; DM response</li>
+                    <li>Social listening &amp; competitor benchmarking</li>
+                    <li>Weekly analytics &amp; growth reporting</li>
+                </ul>
+                <a href="#" class="btn-service">Grow My Socials</a>
+                <a href="#" class="btn-service-outline">See Samples</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESS STRIP -->
+    <section class="process-strip">
+        <div class="section-tag reveal" style="justify-content:center;">Our Workflow</div>
+        <h2 class="section-h2 reveal reveal-delay-1" style="color:#fff;text-align:center;">How Every Engagement <em
+                style="color:var(--accent)">Runs</em></h2>
+        <div class="process-steps-row">
+            <div class="p-step reveal reveal-delay-1">
+                <div class="p-step-num">01</div>
+                <div class="p-dot"></div>
+                <h4>Discovery Call</h4>
+                <p>We learn your brand, audience, goals, and current challenges in depth before recommending anything.
+                </p>
+            </div>
+            <div class="p-step reveal reveal-delay-2">
+                <div class="p-step-num">02</div>
+                <div class="p-dot"></div>
+                <h4>Strategy Build</h4>
+                <p>A custom roadmap — channel mix, creative direction, budget split, KPIs, and a 90-day launch plan.</p>
+            </div>
+            <div class="p-step reveal reveal-delay-3">
+                <div class="p-step-num">03</div>
+                <div class="p-dot"></div>
+                <h4>Launch &amp; Execute</h4>
+                <p>Campaigns go live fast. We test aggressively, adapt in real time, and ship winning creative at pace.
+                </p>
+            </div>
+            <div class="p-step reveal reveal-delay-4">
+                <div class="p-step-num">04</div>
+                <div class="p-dot"></div>
+                <h4>Optimise &amp; Scale</h4>
+                <p>Weekly reviews, monthly deep dives. We scale what works, cut what doesn't, and grow your returns.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="pricing-section" id="pricing">
+        <div class="pricing-header">
+            <div class="section-tag reveal" style="justify-content:center;">Transparent Pricing</div>
+            <h2 class="section-h2 reveal reveal-delay-1" style="text-align:center;">Simple Plans.<br><em>Real
+                    Results.</em></h2>
+            <p class="reveal reveal-delay-2">No hidden fees, no lock-in contracts. Pick a plan and we'll customise the
+                services to fit your exact needs.</p>
+        </div>
+        <div class="pricing-grid">
+            <div class="plan-card reveal">
+                <div class="plan-name">Starter</div>
+                <div class="plan-price">₹25k</div>
+                <div class="plan-period">/ month</div>
+                <ul class="plan-features">
+                    <li>SEO Audit &amp; Basic Optimisation</li>
+                    <li>2 Social Platforms Managed</li>
+                    <li>8 Content Posts / Month</li>
+                    <li>Google Ads Setup</li>
+                    <li>Monthly Report</li>
+                    <li class="disabled">Video Production</li>
+                    <li class="disabled">Dedicated Account Manager</li>
+                </ul>
+                <a href="#" class="plan-btn">Get Started</a>
+            </div>
+            <div class="plan-card featured reveal reveal-delay-1">
+                <div class="plan-badge">Most Popular</div>
+                <div class="plan-name">Growth</div>
+                <div class="plan-price">₹55k</div>
+                <div class="plan-period">/ month</div>
+                <ul class="plan-features">
+                    <li>Full SEO + Link Building</li>
+                    <li>4 Social Platforms Managed</li>
+                    <li>20 Content Posts / Month</li>
+                    <li>Google &amp; Meta Ads</li>
+                    <li>2 Short Videos / Month</li>
+                    <li>Weekly Reports</li>
+                    <li>Dedicated Account Manager</li>
+                </ul>
+                <a href="#" class="plan-btn">Get Started</a>
+            </div>
+            <div class="plan-card reveal reveal-delay-2">
+                <div class="plan-name">Enterprise</div>
+                <div class="plan-price">Custom</div>
+                <div class="plan-period">tailored to you</div>
+                <ul class="plan-features">
+                    <li>Full-Stack Digital Strategy</li>
+                    <li>All Platforms &amp; Channels</li>
+                    <li>Unlimited Content Creation</li>
+                    <li>All Ad Platforms</li>
+                    <li>Video Production Suite</li>
+                    <li>Real-time Dashboard Access</li>
+                    <li>Priority Support &amp; C-Suite Reports</li>
+                </ul>
+                <a href="#" class="plan-btn">Talk to Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testi-section">
+        <div class="testi-header">
+            <div class="section-tag reveal" style="justify-content:center;">Client Stories</div>
+            <h2 class="section-h2 reveal reveal-delay-1" style="text-align:center;">Results That <em>Speak</em></h2>
+        </div>
+        <div class="testi-grid">
+            <div class="testi-card reveal">
+                <div class="testi-stars">★★★★★</div>
+                <p class="testi-quote">"Our organic traffic tripled in 6 months. The SEO team at Creative Advs is
+                    genuinely exceptional — they communicate clearly and deliver every time."</p>
+                <div class="testi-person">
+                    <div class="testi-avatar">RK</div>
+                    <div>
+                        <div class="testi-name">Rajiv Kumar</div>
+                        <div class="testi-role">CEO, NovaTech Solutions</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testi-card reveal reveal-delay-1">
+                <div class="testi-stars">★★★★★</div>
+                <p class="testi-quote">"They cut our cost-per-lead by 40% in 60 days while doubling our ad budget. The
+                    ROI is unbelievable. Best agency decision we've ever made."</p>
+                <div class="testi-person">
+                    <div class="testi-avatar">SM</div>
+                    <div>
+                        <div class="testi-name">Sneha Mehta</div>
+                        <div class="testi-role">Marketing Head, PulseMedia</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testi-card reveal reveal-delay-2">
+                <div class="testi-stars">★★★★★</div>
+                <p class="testi-quote">"Our Instagram grew from 2K to 48K followers in 4 months. The content quality is
+                    outstanding and the team always goes the extra mile."</p>
+                <div class="testi-person">
+                    <div class="testi-avatar">AP</div>
+                    <div>
+                        <div class="testi-name">Arjun Pillai</div>
+                        <div class="testi-role">Founder, ArcBrands</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="cta-band">
+        <div class="section-tag reveal" style="justify-content:center;">Let's Begin</div>
+        <h2 class="section-h2 reveal reveal-delay-1" style="text-align:center;">Ready to <em>Transform</em><br>Your
+            Digital Presence?</h2>
+        <p class="reveal reveal-delay-2">Book a free 30-minute strategy call. No commitment, just clear advice on what
+            will work best for your brand.</p>
+        <div class="cta-btns reveal reveal-delay-3">
+            <a href="#" class="btn-service">Book Free Strategy Call</a>
+            <a href="#" class="btn-service-outline">Download Our Deck</a>
+        </div>
+    </section>
+
+    <!-- ════════ FOOTER ════════ -->
+    <footer class="footer-section">
+        <div class="footer-inner">
+            <div>
+                <a href="/index.html" class="footer-logo-wrap">
+                     <img src="/assets/logo.png" alt="logo" class="logo-img" width="68" height="78">
+                    <div class="footer-logo-text">
+                        <span class="fl1">Creative Advs</span>
+                        <span class="fl2">Digital Marketing</span>
+                    </div>
+                </a>
+                <div class="footer-map">
+                    <iframe
+                        src="https://www.google.com/maps?q=43%20%26%2044%2C%20VN%20Industrial%20Estate%2C%20Playworkz%20Coworking%20Space%2C%20West%2C%20Peelamedu%2C%20Bharathi%20Colony%2C%20Coimbatore%2C%20Tamil%20Nadu%20641004&output=embed"
+                        allowfullscreen loading="lazy">
+                    </iframe>
+
+                    <a href="https://www.google.com/maps?q=43%20%26%2044%2C%20VN%20Industrial%20Estate%2C%20Playworkz%20Coworking%20Space%2C%20West%2C%20Peelamedu%2C%20Bharathi%20Colony%2C%20Coimbatore%2C%20Tamil%20Nadu%20641004"
+                        target="_blank" class="map-badge">
+
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="#1a73e8">
+                            <path
+                                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                        </svg>
+
+                        Open in Maps
+                    </a>
+                </div>
+                <div class="footer-support-card">
+                    <div>
+                        <p class="support-label">Talk to our support</p>
+                        <p class="support-number">+91 9487882058</p>
+                    </div>
+                    <div class="support-icon">
+                        <svg viewBox="0 0 24 24" fill="#fff">
+                            <path
+                                d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-col-links">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-links">
+                <h5>Departments</h5>
+                <ul>
+                    <li><a href="#">Marketing Team</a></li>
+                    <li><a href="#">Design Studio</a></li>
+                    <li><a href="#">SEO & Content</a></li>
+                    <li><a href="#">Development</a></li>
+                    <li><a href="#">Open Roles</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-contact">
+                <h5>Get in Touch</h5>
+                <div class="contact-office">
+                    <div class="contact-office-title"><span>🇮🇳</span><span>INDIA – Head Office</span></div>
+                    <div class="contact-detail">
+                        <svg viewBox="0 0 24 24" fill="#94A3B8">
+                            <path
+                                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                        </svg>
+                        <span>43 & 44, VN Industrial Estate, Playworkz Coworking Space, West, Peelamedu, Bharathi
+                            Colony, Coimbatore, Tamil Nadu 641004.</span>
+                    </div>
+                    <div class="contact-detail">
+                        <svg viewBox="0 0 24 24" fill="#FF4D1C">
+                            <path
+                                d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" />
+                        </svg>
+                        <span><span class="hl">HR:</span> <a href="tel:+917397645521">+91 7397645521</a></span>
+                    </div>
+                    <div class="contact-detail">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#FF4D1C" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
+                        </svg>
+                        <a href="mailto:sales@creativeadvs.in">sales@creativeadvs.in</a>
+                    </div>
+                </div>
+               <a href="https://wa.me/917397645521?text=Hi%20Creative%20Advs!%20I'm%20interested%20in%20your%20digital%20marketing%20services.%20Can%20we%20chat?" 
+                    class="footer-cta-btn" 
+                    target="_blank">
+                Get in Touch
+                </a>
+            </div>
+        </div>
+        <div class="footer-social-row">
+            <div class="footer-socials-list">
+                <a href="https://in.linkedin.com/company/creative-advs-private-limited" class="footer-soc" target="_blank">in</a>
+                <a href="https://www.facebook.com/profile.php?id=100077503988653" class="footer-soc" target="_blank">fb</a>
+                <a href="https://www.instagram.com/creativeadvs/" class="footer-soc" target="_blank">ig</a>
+                <a href="https://www.youtube.com/@creativeadvs4626" class="footer-soc" target="_blank">yt</a>
+            </div>
+            <p class="footer-tagline">Crafting brands that <strong>stand out</strong> &amp; campaigns that
+                <strong>convert.</strong>
+            </p>
+        </div>
+        <div class="footer-copyright">
+            Copyright © 2026 <a href="#">Creative Advs</a>. All Rights Reserved. &nbsp;|&nbsp;
+            <a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Terms of Service</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="/script.js"></script>
+</body>
+
+</html>

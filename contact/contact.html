@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us — Creative Advs | Digital Marketing Agency</title>
+<link rel="icon" type="image/png" href="/assets/logo.png">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="contactstyle.css">
+</head>
+<body>
+
+  <!-- Sidebar
+<button  class="get-quote">Get Quote</button>-->
+
+
+<!-- NAVBAR -->
+  <!-- NAVBAR -->
+<nav>
+    <a href="/index.html" class="logo-wrap">
+        <img src="/assets/logo.png" alt="logo" class="logo-img" width="48" height="48">
+        <div class="logo-text-block">
+            <span class="l1">Creative Advs</span>
+            <span class="l2">Digital Marketing</span>
+        </div>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="/service/service.html">Services</a></li>
+        <li><a href="/service/service.html#pricing">Subcription</a></li>
+        <li><a href="/about/about.html">About Us</a></li>
+        <li><a href="/blog/blog.html">Blog</a></li>
+        <li><a href="/team/team.html">Team</a></li>
+        <li><a href="/career/career.html">Careers</a></li>
+        <li><a href="/about/about.html#whyus">Why Choose Us</a></li>
+        <li><a href="/contact/contact.html">Contact</a></li> 
+    </ul>
+
+    <div class="nav-actions">
+        <a href="tel:+919876543210" class="btn-pill hide-mobile">Call Us</a>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+</nav>
+
+<!-- ══════════════════════════════════════════
+     PASTE THIS BLOCK RIGHT AFTER </nav> in index.html
+     ══════════════════════════════════════════ -->
+
+<!-- MOBILE OVERLAY (backdrop) -->
+<div class="mobile-overlay" id="mobileOverlay"></div>
+
+<!-- MOBILE DRAWER (slides in from right) -->
+<div class="mobile-drawer" id="mobileDrawer" role="dialog" aria-label="Navigation menu">
+
+  <!-- Header -->
+  <div class="drawer-header">
+    <a href="/index.html" class="drawer-logo">
+      <img src="/assets/logo.png" alt="Creative Advs logo" width="36" height="36">
+      <div class="drawer-logo-text">
+        <span class="dl1">Creative Advs</span>
+        <span class="dl2">Digital Marketing</span>
+      </div>
+    </a>
+    <button class="drawer-close" id="drawerClose" aria-label="Close menu">
+      <svg viewBox="0 0 24 24">
+        <line x1="18" y1="6" x2="6" y2="18"/>
+        <line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Nav links -->
+  <nav class="drawer-nav" aria-label="Mobile navigation">
+    <div class="drawer-section-label">Navigation</div>
+    <a href="/service/service.html">Services <span class="dn-arrow">›</span></a>
+    <a href="/portfolio/portfolio.html">Work <span class="dn-arrow">›</span></a>
+    <a href="/about/about.html">About Us <span class="dn-arrow">›</span></a>
+    <a href="/blog/blog.html">Blog <span class="dn-arrow">›</span></a>
+    <div class="drawer-divider"></div>
+    <div class="drawer-section-label">More</div>
+    <a href="/team/team.html">Team <span class="dn-arrow">›</span></a>
+    <a href="/career/career.html">Careers <span class="dn-arrow">›</span></a>
+    <a href="/testimonial/testimonial.html">Testimonials <span class="dn-arrow">›</span></a>
+    <a href="/contact/contact.html">Contact <span class="dn-arrow">›</span></a>
+  </nav>
+
+  <!-- CTA buttons -->
+  <div class="drawer-ctas">
+    <a href="/contact/contact.html" class="drawer-btn-primary">📞 Contact Us</a>
+    <a href="/contact/contact.html" class="drawer-btn-outline">Get a Free Quote</a>
+  </div>
+
+  <!-- Contact info -->
+  <div class="drawer-contact">
+    <a href="tel:+917397645521" class="drawer-contact-item">
+      <div class="dci-icon" style="background:rgba(41,165,155,0.1)">
+        <svg viewBox="0 0 24 24" fill="#29A59B">
+          <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/>
+        </svg>
+      </div>
+      +91 7397645521
+    </a>
+    <a href="mailto:sales@creativeadvs.in" class="drawer-contact-item">
+      <div class="dci-icon" style="background:rgba(124,58,237,0.1)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+          <polyline points="22,6 12,13 2,6"/>
+        </svg>
+      </div>
+      sales@creativeadvs.in
+    </a>
+  </div>
+
+  <!-- Social icons -->
+  <div class="drawer-social">
+    <a href="#" class="drawer-soc" aria-label="LinkedIn">in</a>
+    <a href="#" class="drawer-soc" aria-label="Facebook">fb</a>
+    <a href="#" class="drawer-soc" aria-label="Twitter">tw</a>
+    <a href="#" class="drawer-soc" aria-label="Instagram">ig</a>
+    <a href="#" class="drawer-soc" aria-label="YouTube">yt</a>
+  </div>
+
+</div>
+<!-- ══ END MOBILE DRAWER ══ -->
+
+<!-- ════════ HERO ════════ -->
+<section class="page-hero">
+  <div class="hero-shapes">
+    <div class="hs hs-1"></div>
+    <div class="hs hs-2"></div>
+    <div class="hs hs-3"></div>
+  </div>
+  <div class="hero-inner">
+    <div class="hero-tag reveal">We'd Love to Hear From You</div>
+    <h1 class="reveal rd1">Let's Start a <em>Conversation</em></h1>
+    <p class="reveal rd2">Whether you have a project in mind, a question about our services, or just want to explore possibilities — we're just a message away.</p>
+    <div class="breadcrumb reveal rd3">
+      <a href="creative-advs-replica.html">Home</a>
+      <span>›</span><span>Contact</span>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ QUICK CONTACT PILLS ════════ -->
+<div class="quick-pills">
+  <a href="tel:+919876543210" class="q-pill reveal">
+    <div class="q-pill-icon" style="background:var(--accent)">
+      <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+    </div>
+    <div>
+      <div class="q-pill-label">Call Sales</div>
+      <div class="q-pill-value">+91 7397645521</div>
+    </div>
+  </a>
+  <a href="mailto:sales@creativeadvs.in" class="q-pill reveal rd1">
+    <div class="q-pill-icon" style="background:var(--accent2)">
+      <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+    </div>
+    <div>
+      <div class="q-pill-label">Email Us</div>
+      <div class="q-pill-value">sales@creativeadvs.in</div>
+    </div>
+  </a>
+  <a href="https://wa.me/917397645521" class="q-pill reveal rd2">
+    <div class="q-pill-icon" style="background:#25D366">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+    </div>
+    <div>
+      <div class="q-pill-label">WhatsApp</div>
+      <div class="q-pill-value">Chat Instantly</div>
+    </div>
+  </a>
+  <a href="#" class="q-pill reveal rd3">
+    <div class="q-pill-icon" style="background:var(--teal)">
+      <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+    </div>
+    <div>
+      <div class="q-pill-label">Book a Call</div>
+      <div class="q-pill-value">Free Strategy Session</div>
+    </div>
+  </a>
+</div>
+
+<!-- ════════ MAIN CONTACT SECTION ════════ -->
+<section class="contact-main">
+  <div class="contact-main-inner">
+
+    <!-- LEFT INFO -->
+    <div class="contact-info">
+      <div class="section-tag reveal">Get in Touch</div>
+      <h2 class="reveal rd1">We're Ready to<br><em>Work With You</em></h2>
+      <p class="reveal rd2">Fill out the form and our strategy team will reach out within 24 hours. Prefer talking? Call us directly — we don't hide behind email.</p>
+
+      <!-- Office Cards -->
+      <div class="office-cards reveal rd2">
+
+        <!-- India HQ -->
+        <div class="office-card" style="--card-color: var(--accent)">
+          <div class="office-flag-row">
+            <span class="office-flag">🇮🇳</span>
+            <span class="office-country">India</span>
+            <span class="office-badge badge-hq">Head Office</span>
+          </div>
+          <div class="office-detail-row">
+            <svg viewBox="0 0 24 24" fill="#FF4D1C"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            <span>43 & 44, VN Industrial Estate, Playworkz Coworking Space, West, Peelamedu, Bharathi Colony, Coimbatore, Tamil Nadu 641004.</span>
+          </div>
+          <div class="office-detail-row">
+            <svg viewBox="0 0 24 24" fill="#FF4D1C"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+            <span><span class="hl">Sales:</span> <a href="tel:+917397645521">+91 7397645521</a> &nbsp;|&nbsp; <span class="hl">HR:</span> <a href="tel:+918838125555">+91 9487882058</a></span>
+          </div>
+          <div class="office-detail-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#FF4D1C" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:sales@creativeadvs.in">sales@creativeadvs.in</a>
+          </div>
+          <div class="office-detail-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#FF4D1C" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Mon–Sat, 9:00 AM – 7:00 PM IST</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Social links -->
+      <div class="contact-socials reveal rd3">
+        <a href="https://in.linkedin.com/company/creative-advs-private-limited" class="c-soc soc-li" target="_blank">
+          <div class="c-soc-dot" style="background:#0077B5"></div>LinkedIn
+        </a>
+        <a href="" class="c-soc soc-ig" target="_blank">
+          <div class="c-soc-dot" style="background:#E1306C"></div>Instagram
+        </a>
+        <a href="https://www.instagram.com/creativeadvs/" class="c-soc soc-fb" target="_blank">
+          <div class="c-soc-dot" style="background:#1877F2"></div>Facebook
+        </a>
+        <a href="#" class="c-soc soc-yt">
+          <div class="c-soc-dot" style="background:#FF0000"></div>YouTube
+        </a>
+      </div>
+    </div>
+
+    <!-- RIGHT FORM -->
+    <div id="contact-form" class="contact-form-card reveal rd2">
+      <div id="form-body">
+        <div class="form-header">
+          <h3>Send Us a Message</h3>
+          <p>We respond to every enquiry within 24 hours.</p>
+        </div>
+
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label>First Name *</label>
+              <input type="text" placeholder="Arjun" required>
+            </div>
+            <div class="form-group">
+              <label>Last Name *</label>
+              <input type="text" placeholder="Kumar" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Email Address *</label>
+              <input type="email" placeholder="arjun@company.com" required>
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" placeholder="+91 98765 43210">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Company / Brand Name</label>
+            <input type="text" placeholder="Your Company Pvt Ltd">
+          </div>
+
+          <div class="form-group">
+            <label>I'm interested in...</label>
+            <div class="services-check-grid">
+              <label class="svc-check-item">
+                <input type="checkbox">
+                <div class="svc-check-box"><svg viewBox="0 0 12 12" fill="none" stroke="#fff" stroke-width="2"><polyline points="2,6 5,9 10,3"/></svg></div>
+                <span class="svc-check-label">SEO</span>
+              </label>
+              <label class="svc-check-item">
+                <input type="checkbox">
+                <div class="svc-check-box"><svg viewBox="0 0 12 12" fill="none" stroke="#fff" stroke-width="2"><polyline points="2,6 5,9 10,3"/></svg></div>
+                <span class="svc-check-label">Performance Ads</span>
+              </label>
+              <label class="svc-check-item">
+                <input type="checkbox" checked>
+                <div class="svc-check-box"><svg viewBox="0 0 12 12" fill="none" stroke="#fff" stroke-width="2"><polyline points="2,6 5,9 10,3"/></svg></div>
+                <span class="svc-check-label">Social Media</span>
+              </label>
+              <label class="svc-check-item">
+                <input type="checkbox">
+                <div class="svc-check-box"><svg viewBox="0 0 12 12" fill="none" stroke="#fff" stroke-width="2"><polyline points="2,6 5,9 10,3"/></svg></div>
+                <span class="svc-check-label">Content Marketing</span>
+              </label>
+              <label class="svc-check-item">
+                <input type="checkbox">
+                <div class="svc-check-box"><svg viewBox="0 0 12 12" fill="none" stroke="#fff" stroke-width="2"><polyline points="2,6 5,9 10,3"/></svg></div>
+                <span class="svc-check-label">Brand Identity</span>
+              </label>
+              <label class="svc-check-item">
+                <input type="checkbox">
+                <div class="svc-check-box"><svg viewBox="0 0 12 12" fill="none" stroke="#fff" stroke-width="2"><polyline points="2,6 5,9 10,3"/></svg></div>
+                <span class="svc-check-label">Video Production</span>
+              </label>
+              <label class="svc-check-item">
+                <input type="checkbox">
+                <div class="svc-check-box"><svg viewBox="0 0 12 12" fill="none" stroke="#fff" stroke-width="2"><polyline points="2,6 5,9 10,3"/></svg></div>
+                <span class="svc-check-label">Web Development</span>
+              </label>
+              <label class="svc-check-item">
+                <input type="checkbox">
+                <div class="svc-check-box"><svg viewBox="0 0 12 12" fill="none" stroke="#fff" stroke-width="2"><polyline points="2,6 5,9 10,3"/></svg></div>
+                <span class="svc-check-label">E-commerce Solutions</span>
+              </label>  
+              <label class="svc-check-item">
+                <input type="checkbox">
+                <div class="svc-check-box"><svg viewBox="0 0 12 12" fill="none" stroke="#fff" stroke-width="2"><polyline points="2,6 5,9 10,3"/></svg></div>
+                <span class="svc-check-label">OTA Management</span>
+              </label>
+              <label class="svc-check-item">
+                <input type="checkbox">
+                <div class="svc-check-box"><svg viewBox="0 0 12 12" fill="none" stroke="#fff" stroke-width="2"><polyline points="2,6 5,9 10,3"/></svg></div>
+                <span class="svc-check-label">Product Branding</span>
+              </label>
+              <label class="svc-check-item">
+                <input type="checkbox">
+                <div class="svc-check-box"><svg viewBox="0 0 12 12" fill="none" stroke="#fff" stroke-width="2"><polyline points="2,6 5,9 10,3"/></svg></div>
+                <span class="svc-check-label">Product Photoshoot</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>How did you hear about us?</label>
+            <select>
+              <option value="" disabled selected>Select an option</option>
+              <option>Google Search</option>
+              <option>Social Media</option>
+              <option>Referral from a friend</option>
+              <option>LinkedIn</option>
+              <option>Blog / Article</option>
+            </select>
+          </div>
+
+          <!-- Budget slider -->
+          <div class="budget-slider-wrap">
+            <div class="budget-labels">
+              <label>Monthly Budget (INR)</label>
+              <span class="budget-val" id="budgetVal">₹30,000</span>
+            </div>
+            <input type="range" id="budgetSlider" min="10000" max="500000" step="5000" value="30000">
+          </div>
+
+          <div class="form-group">
+            <label>Tell Us About Your Project *</label>
+            <textarea placeholder="Briefly describe your brand, goals, and what you're looking to achieve with digital marketing..." required></textarea>
+          </div>
+
+          <button type="submit" class="form-submit">
+            <svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Send Message
+          </button>
+          <div class="form-note">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#94A3B8" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+            Your information is 100% secure and never shared.
+          </div>
+        </form>
+      </div>
+
+      <!-- Success state -->
+      <div class="form-success" id="formSuccess">
+        <div class="success-icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="#14B8A6" stroke-width="3">
+            <circle cx="24" cy="24" r="20"/>
+            <polyline points="16,24 21,30 32,18"/>
+          </svg>
+        </div>
+        <h4>Message Sent! 🎉</h4>
+        <p>Thank you for reaching out. Our team will get back to you within 24 hours.</p>
+      </div>
+    </div>
+
+  </div><!-- /contact-main-inner -->
+</section>
+
+<!-- ════════ MAP SECTION ════════ -->
+<section class="map-section">
+  <div class="map-section-inner">
+    <div class="map-header reveal">
+      <h3>Find Us on the Map</h3>
+      <p>Visit our head office in Coimbatore or reach out to our UK branch.</p>
+    </div>
+    <div class="map-tabs reveal rd1">
+      <div class="map-tab active" onclick="switchMap('india', this)">🇮🇳 India — Coimbatore</div>
+    </div>
+    <div class="map-container reveal rd2" id="mapContainer">
+      <iframe id="mapFrame"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.2163155792135!2d76.9921456!3d11.024595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8597a7fdb535b%3A0xce36bc3e6a134080!2sPlayworkz%20Coworking%20Space!5e0!3m2!1sen!2sin!4v1713300000000!5m2!1sen!2sin"   
+     allowfullscreen loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ FAQ SECTION ════════ -->
+<section class="faq-section">
+  <div class="faq-inner">
+    <div class="faq-header">
+      <div class="section-tag reveal" style="justify-content:center">FAQ</div>
+      <h2 class="reveal rd1">Common <em>Questions</em></h2>
+      <p class="reveal rd2">Everything you need to know before getting in touch.</p>
+    </div>
+    <div class="faq-list">
+
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          How quickly will you respond to my enquiry?
+          <div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">We respond to all enquiries within 24 hours on business days. For urgent requests, call us directly at +91 98765 43210 or ping us on WhatsApp — we're quick to respond there too.</div></div>
+      </div>
+
+      <div class="faq-item reveal rd1">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Do you offer a free consultation?
+          <div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Yes! We offer a free 30-minute strategy call for all new enquiries. No obligations, no sales pressure — just honest advice on what will work best for your brand and goals.</div></div>
+      </div>
+
+      <div class="faq-item reveal rd2">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          What's your minimum monthly budget?
+          <div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Our Starter plan begins at ₹25,000/month for management fees. Ad spend is separate and depends on your goals. We're transparent about costs from day one — no surprises.</div></div>
+      </div>
+
+      <div class="faq-item reveal rd3">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Do you work with clients outside India?
+          <div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Absolutely. We work with clients across India, the UK, UAE, and Southeast Asia. Our UK branch office in Milton Keynes handles European client relationships. Time zone is never a barrier.</div></div>
+      </div>
+
+      <div class="faq-item reveal rd4">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          How long before I see results from digital marketing?
+          <div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Paid campaigns typically show measurable results within 2–4 weeks. SEO is a 3–6 month investment that compounds over time. Social media growth depends on the starting point, but most clients see a 30–50% engagement lift within 60 days.</div></div>
+      </div>
+
+      <div class="faq-item reveal rd5">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Are there long-term contracts?
+          <div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">We offer month-to-month arrangements after an initial 3-month onboarding period. We believe clients should stay because of results, not contracts. Our 98% retention rate speaks for itself.</div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════ CTA ════════ -->
+<section class="cta-band">
+  <h2 class="reveal">Don't Wait — Let's Build<br>Something Great Together</h2>
+  <p class="reveal rd1">Every day you delay is a day your competitors get ahead. Let's change that — starting now.</p>
+  <div class="cta-btns reveal rd2">
+    <a href="#contact-form" class="btn-white">Send a Message</a>
+    <a href="Services.html" class="btn-ghost">Explore Services</a>
+  </div>
+</section>
+
+<!-- ════════ FOOTER ════════ -->
+<footer class="footer-section">
+  <div class="footer-inner">
+            <div>
+                <a href="#" class="footer-logo-wrap">
+                     <img src="/assets/logo.png" alt="logo" class="logo-img" width="68" height="78">
+                    <div class="footer-logo-text">
+                        <span class="fl1">Creative Advs</span>
+                        <span class="fl2">Digital Marketing</span>
+                    </div>
+                </a>
+                <div class="footer-map">
+                    <iframe
+                        src="https://www.google.com/maps?q=43%20%26%2044%2C%20VN%20Industrial%20Estate%2C%20Playworkz%20Coworking%20Space%2C%20West%2C%20Peelamedu%2C%20Bharathi%20Colony%2C%20Coimbatore%2C%20Tamil%20Nadu%20641004&output=embed"
+                        allowfullscreen loading="lazy">
+                    </iframe>
+
+                    <a href="https://www.google.com/maps?q=43%20%26%2044%2C%20VN%20Industrial%20Estate%2C%20Playworkz%20Coworking%20Space%2C%20West%2C%20Peelamedu%2C%20Bharathi%20Colony%2C%20Coimbatore%2C%20Tamil%20Nadu%20641004"
+                        target="_blank" class="map-badge">
+
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="#1a73e8">
+                            <path
+                                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                        </svg>
+
+                        Open in Maps
+                    </a>
+                </div>
+                <div class="footer-support-card">
+                    <div>
+                        <p class="support-label">Talk to our support</p>
+                        <p class="support-number">+91 9487882058</p>
+                    </div>
+                    <div class="support-icon">
+                        <svg viewBox="0 0 24 24" fill="#fff">
+                            <path
+                                d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+    <div class="footer-col-links">
+      <h5>Quick Links</h5>
+      <ul>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col-links">
+      <h5>Services</h5>
+      <ul>
+        <li><a href="#">SEO & Search Marketing</a></li>
+        <li><a href="#">Performance Advertising</a></li>
+        <li><a href="#">Social Media Marketing</a></li>
+        <li><a href="#">Content Marketing</a></li>
+        <li><a href="#">Brand Identity</a></li>
+        <li><a href="#">Video Production</a></li>
+      </ul>
+    </div>
+    <div class="footer-col-contact">
+      <h5>Contact Info</h5>
+      <div class="contact-office">
+        <div class="contact-office-title"><span>🇮🇳</span><span>India – Head Office</span></div>
+        <div class="f-contact-detail">
+          <svg viewBox="0 0 24 24" fill="#94A3B8"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              <span>43 & 44, VN Industrial Estate, Playworkz Coworking Space, West, Peelamedu, Bharathi
+                            Colony, Coimbatore, Tamil Nadu 641004.</span>
+        </div>
+        <div class="f-contact-detail">
+          <svg viewBox="0 0 24 24" fill="#FF4D1C"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+          <a href="tel:+919876543210">+91 7397645521</a>
+        </div>
+        <div class="f-contact-detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#FF4D1C" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:sales@creativeadvs.in">sales@creativeadvs.in</a>
+        </div>
+      </div>
+               <a href="https://wa.me/917397645521?text=Hi%20Creative%20Advs!%20I'm%20interested%20in%20your%20digital%20marketing%20services.%20Can%20we%20chat?" 
+                    class="footer-cta-btn" 
+                    target="_blank">
+                Get in Touch
+                </a>
+    </div>
+  </div>
+  <div class="footer-social-row">
+    <div class="footer-socials-list">
+      <a href="https://in.linkedin.com/company/creative-advs-private-limited" class="footer-soc">in</a>
+      <a href="https://www.facebook.com/profile.php?id=100077503988653" class="footer-soc" target="_blank">fb</a>
+      <a href="https://www.instagram.com/creativeadvs/" class="footer-soc" target="_blank">ig</a>
+      <a href="https://www.youtube.com/@creativeadvs4626" class="footer-soc" target="_blank">yt</a>
+    </div>
+    <p class="footer-tagline">Crafting brands that <strong>stand out</strong> &amp; campaigns that <strong>convert.</strong></p>
+  </div>
+  <div class="footer-copyright">
+    Copyright © 2026 <a href="#">Creative Advs</a>. All Rights Reserved. &nbsp;|&nbsp;
+    <a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Terms of Service</a>
+  </div>
+</footer>
+
+<script src="contactscript.js"></script>
+<script src="/script.js"></script>
+</body>
+</html>
