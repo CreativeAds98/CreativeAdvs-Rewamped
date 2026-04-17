@@ -640,8 +640,7 @@
         <li><a href="Services.html">Services</a></li>
         <li><a href="team.html">Team</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="#">Work</a></li>
-        <li><a href="#">Blog</a></li>
+        <li><a href="blog.html">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
@@ -697,16 +696,8 @@
     <a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Terms of Service</a>
   </div>
 </footer>
-<script src="/script.js"></script>
-<script>
-  const obs = new IntersectionObserver(entries => {
-    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-  }, { threshold: 0.1 });
-  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+<script src="scripts/aboutscript.js"></script>
+<script src="scripts/script.js"></script>
 
-  // Ticker duplicate
-  const t = document.getElementById('ticker');
-  t.innerHTML += t.innerHTML;
-</script>
 </body>
 </html>
