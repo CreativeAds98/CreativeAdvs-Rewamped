@@ -1698,53 +1698,254 @@
     /* Curved connector arrows */
     .connector-svg {
         position: absolute;
-        pointer-events: none;
+        pointer-events:none;
         z-index: 3;
     }
 
-    @media (max-width: 900px) {
-        .process-section {
-            padding: 4rem 1.5rem;
-        }
+  /* ═══════════════════════════════════════════════════════
+   PROCESS SECTION — MOBILE FIX
+   Add this to your main stylesheet (style.css)
+   These rules override the desktop absolute positioning
+   on screens ≤ 900px and create a clean vertical timeline
+═══════════════════════════════════════════════════════ */
 
-        .process-vertical-label {
-            display: none;
-        }
+@media (max-width: 900px) {
 
-        .process-content {
-            min-height: auto;
-            padding: 0;
-        }
+  /* ── Section wrapper ── */
+  .process-section {
+    padding: 4rem 1.5rem 4rem 1.5rem; /* remove the large left padding meant for the label */
+    overflow: hidden;
+  }
 
-        .ps-meet,
-        .ps-plan,
-        .ps-webdesign,
-        .ps-testing,
-        .ps-launch,
-        .ps-who,
-        .connector-svg,
-        .blob-wrap {
-            position: static !important;
-            transform: none !important;
-            max-width: 100%;
-        }
+  /* ── Hide the rotated "OUR PROCESS" label — too cramped on mobile ── */
+  .process-vertical-label {
+    display: none;
+  }
 
-        .process-content {
-            display: flex;
-            flex-direction: column;
-            gap: 3rem;
-        }
+  /* Add a simple visible heading instead */
+  .process-section::before {
+    content: 'OUR PROCESS';
+    display: block;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+    letter-spacing: 0.14em;
+    color: #94A3B8;
+    margin-bottom: 2.5rem;
+  }
 
-        .step-item {
-            flex-direction: row;
-        }
+  /* ── Hide the blob SVG background (performance + visual clutter) ── */
+  .blob-wrap {
+    display: none;
+  }
 
-        .blob-wrap {
-            display: none;
-        }
-    }
+  /* ── Hide ALL connector arrow SVGs on mobile ── */
+  .connector-svg {
+    display: none !important;
+  }
+
+  /* ── Reset the process content container ── */
+  .process-content {
+    position: static !important;         /* remove position:relative */
+    display: flex;
+    flex-direction: column;
+    gap: 0;                               /* gap handled by step padding */
+    min-height: unset !important;
+    padding: 0 !important;
+    max-width: 100%;
+  }
+
+  /* ── Reset ALL step positions to static ── */
+  .ps-meet,
+  .ps-plan,
+  .ps-webdesign,
+  .ps-testing,
+  .ps-launch {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    max-width: 100% !important;
+    transform: none !important;
+  }
+
+  /* ── Hide the "who is behind" centre illustration ── */
+  .ps-who {
+    display: none;
+  }
+
+  /* ── Vertical timeline layout for each step ── */
+  .step-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.1rem;
+    padding: 1.4rem 1.2rem;
+    background: #fff;
+    border-radius: 16px;
+    border: 1.5px solid #E2E0F0;
+    margin-bottom: 0;                   /* use the pseudo-connector below instead */
+    position: relative;
+    transition: border-color 0.2s;
+  }
+
+  .step-item:hover {
+    border-color: #29A59B;
+  }
+
+  /* ── Draw a dashed vertical connector line between steps ── */
+  .step-item:not(:last-child)::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -28px;
+    left: 47px;                          /* align under the icon centre */
+    width: 2px;
+    height: 28px;
+    background: repeating-linear-gradient(
+      to bottom,
+      #CBD5E1 0px, #CBD5E1 5px,
+      transparent 5px, transparent 10px
+    );
+    z-index: 2;
+  }
+
+  /* ── Arrow chevron at end of each connector ── */
+  .step-item:not(:last-child)::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -34px;
+    left: 42px;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 8px solid #CBD5E1;
+    z-index: 3;
+  }
+
+  /* Give each step a bottom margin to accommodate the connector */
+  .step-item:not(:last-child) {
+    margin-bottom: 36px;
+  }
+
+  /* ── Step number badge (auto-generated via counter) ── */
+  .process-content {
+    counter-reset: step-counter;
+  }
+
+  .step-item {
+    counter-increment: step-counter;
+  }
+
+  /* ── Icon box ── */
+  .step-icon {
+    flex-shrink: 0;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F8F7FF;
+    border-radius: 14px;
+    border: 1.5px solid #E2E0F0;
+    position: relative;
+  }
+
+  /* Step number in top-left corner of icon */
+  .step-icon::before {
+    content: counter(step-counter);
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #29A59B;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+  }
+
+  .step-icon svg {
+    width: 38px;
+    height: 38px;
+  }
+
+  /* ── Step text body ── */
+  .step-body {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .step-body h4 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: #0F172A;
+    margin-bottom: 0.35rem;
+    letter-spacing: -0.01em;
+  }
+
+  .step-body p {
+    font-size: 0.8rem;
+    color: #475569;
+    line-height: 1.7;
+    font-weight: 300;
+    margin: 0;
+  }
+
+} /* end @media (max-width: 900px) */
 
 
+/* ── Extra small screens (phones ≤ 480px) ── */
+@media (max-width: 480px) {
+
+  .process-section {
+    padding: 3rem 1rem 3rem 1rem;
+  }
+
+  .step-item {
+    gap: 0.9rem;
+    padding: 1.2rem 1rem;
+  }
+
+  .step-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+  }
+
+  .step-icon svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .step-body h4 {
+    font-size: 0.98rem;
+  }
+
+  .step-body p {
+    font-size: 0.78rem;
+  }
+
+  /* Adjust connector line position for smaller icon */
+  .step-item:not(:last-child)::after {
+    left: 40px;
+  }
+
+  .step-item:not(:last-child)::before {
+    left: 35px;
+  }
+
+}
 
     /* ══════════════════════════════════════════
             WHAT WE DO — SERVICES GRID SECTION
